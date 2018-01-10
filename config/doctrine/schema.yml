@@ -443,47 +443,7 @@ AdNews:
     slug: { type: string(255), unique: true, notnull: true, comment: "chuyển đổi url"}
     category_id: { type: integer(8), comment: "Id của danh mục tin tức" }
 #bang book phong
-Booking:
-#connection: doctrine
-  tableName: booking
-  actAs:
-    Timestampable: ~
-  columns:
-    full_name: { type: string(255), notnull: true, comment: "Tên KH" }
-    phone: { type: string(255), comment: "SĐT" }
-    email: { type: string(255), comment: "email" }
-    body: { type: clob, comment: "Nội dung bài viết trên web" }
-    category_id: {type: integer(8), notnull: false, default: null}
-    product_id: {type: integer(8), notnull: false, default: null}
-    lang: {  type: string(10), notnull: true, comment: "Đa ngôn ngữ" }
-    is_check: { type: integer(5), notnull: true, default: 0, comment: "0 chưa xử lý, 1 đang xử lý, 2 đã xử lý" }
-    from_time: { type: timestamp(25), comment: "Thời gian đặt phòng" }
-    to_time: { type: timestamp(25), comment: "Thời gian kết thúc đặt phòng"}
-    number_person: {type: integer(8), notnull: false, default: null}
-    number_room: {type: integer(8), notnull: false, default: null}
-ParameterCategory:
-  #connection: doctrine
-  tableName: parameter_category
-  actAs:
-    VtBlameable: ~
-    Timestampable: ~
-  columns:
-    name: { type: string(255), notnull: true,  comment: "Tên"}
-    priority: {type: integer(5), default: null}
-    is_active: { type: boolean, notnull: true, default: false, comment: "Trạng thái"}
-    lang: {  type: string(10), notnull: true, comment: "Đa ngôn ngữ" }
-Parameter:
-  #connection: doctrine
-  tableName: parameter
-  actAs:
-    VtBlameable: ~
-    Timestampable: ~
-  columns:
-    name: { type: string(255), notnull: true,  comment: "Tên"}
-    priority: {type: integer(5), default: null}
-    cat_id: {type: integer(8), default: 0}
-    is_active: { type: boolean, notnull: false, default: false, comment: "Trạng thái"}
-    lang: {  type: string(10), notnull: true, comment: "Đa ngôn ngữ" }
+
 AdFeedBack:
   #connection: doctrine
   tableName: ad_feed_back
@@ -517,26 +477,51 @@ AdConfig:
     config_val: { type: string, notnull: true,  comment: "config_val"}
     is_active: { type: boolean, notnull: false, default: false, comment: "Trạng thái"}
     lang: {  type: string(10), notnull: true, comment: "Đa ngôn ngữ" }
-AdChainImage:
+AdYoutube:
   #connection: doctrine
-  tableName: ad_chain_image
+  tableName: ad_youtube
   actAs:
-    VtBlameable: ~
     Timestampable: ~
   columns:
-    file_path: { type: string(255), notnull: true, comment: "Đường dẫn file"}
-    extension: { type: string(200), comment: "phần mở rộng của file"}
-    priority: { type: integer(5), comment: "Độ ưu tiên hiển thị" }
-    product: { type: integer(15), comment: "id product" }
+    name: { type: string(255), notnull: true,  comment: "Tên video"}
+    description: { type: string(1000), notnull: true,  comment: "mô tả"}
+    body: { type: clob, comment: "Nội dung bài viết trên web" }
+    link: { type: string(255), notnull: true,  comment: "link youtube"}
+    image: { type: string(255), notnull: true,  comment: "ảnh đại diện"}
+    priority: { type: integer(5), notnull: true, comment: "Độ ưu tiên hiển thị" }
     is_active: { type: boolean, notnull: false, default: false, comment: "Trạng thái"}
-    lang: {  type: string(10), notnull: true, comment: "Đa ngôn ngữ" }
-AdManageFile:
-  tableName: ad_manage_file
+AdDocumentDownload:
+  #connection: doctrine
+  tableName: ad_document_download
+  actAs:
+    Timestampable: ~
   columns:
-    article_id:     {type: integer(8),  notnull: false, comment: 'id tin tuc'}
-    short_url:      {type: string(255), notnull: true, comment: 'media/2014/07/17/test.jpg'}
-    description:    {type: clob,        notnull: false}
-    type:           {type: integer(2),  notnull: true, default: 1, comment:  '1: image, 2: audio, 3 video'}
-    duration:       {type: integer(4),  notnull: false}
-    position:       {type: integer(4),  notnull: false, comment: 'vi tri anh, video' }
-    type_product:       {type: integer(4),  notnull: false, comment: 'anh phan he' }
+    name: { type: string(255), notnull: true,  comment: "Tên video"}
+    description: { type: string(1000), notnull: true,  comment: "mô tả"}
+    body: { type: clob, comment: "Nội dung bài viết trên web" }
+    link: { type: string(255), notnull: true,  comment: "link google driver"}
+    image: { type: string(255), notnull: true,  comment: "ảnh đại diện"}
+    priority: { type: integer(5), notnull: true, comment: "Độ ưu tiên hiển thị" }
+    is_active: { type: boolean, notnull: false, default: false, comment: "Trạng thái"}
+AdHocVien:
+  #connection: doctrine
+  tableName: ad_hoc_vien
+  actAs:
+    Timestampable: ~
+  columns:
+    name: { type: string(255), notnull: true,  comment: "Tên học viên"}
+    description: { type: string(1000), notnull: true,  comment: "mô tả"}
+    image: { type: string(255), notnull: true,  comment: "ảnh đại diện"}
+    priority: { type: integer(5), notnull: true, comment: "Độ ưu tiên hiển thị" }
+    is_active: { type: boolean, notnull: false, default: false, comment: "Trạng thái"}
+AdGiangVien:
+  #connection: doctrine
+  tableName: ad_giang_vien
+  actAs:
+    Timestampable: ~
+  columns:
+    name: { type: string(255), notnull: true,  comment: "Tên giảng viên"}
+    description: { type: string(1000), notnull: true,  comment: "mô tả"}
+    image: { type: string(255), notnull: true,  comment: "ảnh đại diện"}
+    priority: { type: integer(5), notnull: true, comment: "Độ ưu tiên hiển thị" }
+    is_active: { type: boolean, notnull: false, default: false, comment: "Trạng thái"}
