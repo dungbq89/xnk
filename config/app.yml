@@ -25,12 +25,10 @@ all:
   document: document
   member_images: member
   image_default: 'http://nehobcity.com/images/default.jpg'
-  upload_member: "E:/app/project/dungbq3/newlandhouse.vn/newland/web/uploads"
-
-  upload_media_file: "E:/app/project/dungbq3/newlandhouse.vn/newland/web/uploads"
-  url_media_file: http://localhost:5850/uploads
-  url_media_default_file: http://localhost:5850/images/default-image.jpg
-  image_default: http://localhost:5850/images/default-image.jpg
+  upload_media_file: "F:/code/xnk/xnk/web/uploads"
+  url_media_file: http://localhost:9763/uploads
+  url_media_default_file: http://localhost:9763/images/default-image.jpg
+  image_default: http://localhost:9763/images/default-image.jpg
   #upload_media_file: /uploads
 
   url_media_file: /uploads
@@ -42,7 +40,7 @@ all:
     basePath: /js/ckfinder
   addcslashes_charlist: "%_-\'"  # Danh sach cac ky tu dac biet can xu ly truoc khi su dung search query
   seo:
-    title: 'TỦ BẾP HOÀN MỸ'
+    title: 'XNK'
     description: 'Tủ bếp Hoàn Mỹ chuyên cung cấp Bếp điện từ, bếp gas âm, máy hút mùi, máy rửa bát, máy sấy, máy lọc nước, lò nướng, lò vi sóng, chậu rửa bát, đồ gia dụng, thiết bị vệ sinh'
     keywords: 'Bếp điện từ, bếp gas âm, máy hút mùi, máy rửa bát, máy sấy, máy lọc nước, lò nướng, lò vi sóng, chậu rửa bát, đồ gia dụng, thiết bị vệ sinh'
     ogImage: ''

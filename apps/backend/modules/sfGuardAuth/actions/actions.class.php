@@ -89,15 +89,15 @@ class sfGuardAuthActions extends BasesfGuardAuthActions
           if ($form->isValid()) {
             $user->setIpAddress($this->getRequest()->getHttpHeader('addr', 'remote'));
             $user->setUserAgent($this->getRequest()->getHttpHeader('User-Agent'));
-            if (!$sf_user->getPassUpdateAt() || (time() - strtotime($sf_user->getPassUpdateAt()) > sfConfig::get('app_passuser_lifetime', 7776000))) {
-              //            $this->redirect('@sf_guard_user_vtManageUserInfo_edit?id='.$sf_user->getId());
-              //            return;
-              $this->form = new adSignInChangePasswordForm();
-              $this->form->setUserName($username);
-              $this->change_password = 1;
-              $this->getUser()->setFlash('notice', $i18n->__('Mật khẩu của bạn đã quá 90 ngày không được thay đổi hoặc đã bị reset. Vui lòng thay đổi mật khẩu'));
-              return;
-            } else
+//            if (!$sf_user->getPassUpdateAt() || (time() - strtotime($sf_user->getPassUpdateAt()) > sfConfig::get('app_passuser_lifetime', 7776000))) {
+//              //            $this->redirect('@sf_guard_user_vtManageUserInfo_edit?id='.$sf_user->getId());
+//              //            return;
+//              $this->form = new adSignInChangePasswordForm();
+//              $this->form->setUserName($username);
+//              $this->change_password = 1;
+//              $this->getUser()->setFlash('notice', $i18n->__('Mật khẩu của bạn đã quá 90 ngày không được thay đổi hoặc đã bị reset. Vui lòng thay đổi mật khẩu'));
+//              return;
+//            } else
             {
               $this->getUser()->signin($form->getValue('user'), $form->getValue('remember'));
               adUserSigninLockTable::getInstance()->resetUserSigninLock($username);

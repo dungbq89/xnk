@@ -7,9 +7,5 @@ security:
   param:
     type: security
 
-# insert your own filters here
-changeLanguage:
-  class: ChangeLanguageFilter
-
 cache:     ~
 execution: ~

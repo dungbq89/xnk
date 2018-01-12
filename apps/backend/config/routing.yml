@@ -1,3 +1,21 @@
+ad_document_download:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                AdDocumentDownload
+    module:               adDocumentDownload
+    prefix_path:          /adDocumentDownload
+    column:               id
+    with_wildcard_routes: true
+
+ad_youtube:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                AdYoutube
+    module:               adYoutube
+    prefix_path:          /adYoutube
+    column:               id
+    with_wildcard_routes: true
+
 ad_feed_back:
   class: sfDoctrineRouteCollection
   options:
