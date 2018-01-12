@@ -1,3 +1,21 @@
+ad_giang_vien:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                AdGiangVien
+    module:               adGiangVien
+    prefix_path:          /adGiangVien
+    column:               id
+    with_wildcard_routes: true
+
+ad_hoc_vien:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                AdHocVien
+    module:               adHocVien
+    prefix_path:          /adHocVien
+    column:               id
+    with_wildcard_routes: true
+
 ad_document_download:
   class: sfDoctrineRouteCollection
   options:
