@@ -1,7 +1,7 @@
 <section id="meet-our-stuff" class="post-11 page type-page status-publish hentry">
     <div class="container">
         <hgroup class="page-title">
-            <h2>Đội ngũ giảng viên</h2>
+            <h2 style="text-transform: uppercase;">Huấn luyện viên</h2>
             <h5>Tất cả chúng tôi ở đây để giúp bạn</h5></hgroup>
         <p style="text-align: center;">Giới thiệu về giảng viên</p>
 

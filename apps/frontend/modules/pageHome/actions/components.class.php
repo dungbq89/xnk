@@ -19,7 +19,11 @@ class pageHomeComponents extends sfComponents
 
     public function executeStudent(sfWebRequest $request)
     {
-
+        $this->students = AdHocVienTable::getAllStudent();
     }
 
+    public function executeMaps(sfWebRequest $request)
+    {
+
+    }
 }
