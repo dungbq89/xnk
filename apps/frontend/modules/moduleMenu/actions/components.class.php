@@ -55,7 +55,7 @@ class moduleMenuComponents extends sfComponents
         }
     }
 
-    public function executeContentFooter(){
+    public function executeFooter(){
         
     }
 

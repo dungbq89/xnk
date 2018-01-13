@@ -1,97 +1,102 @@
-<div class="header">
-    <div class="grid">
-        <div class="header-1-3" style="position:relative; min-height:10px;">
-            <div class="logo" style="padding: 10px;">
-                <a href="/"><img src="../../images/nehob.jpg" alt="NEHOB CITY"
-                                 style="max-width:70%"/></a>
-            </div>
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
+                        class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <a class="navbar-brand" href="<?php echo url_for('@homepage') ?>"><img height="90px"
+                                                                                   src="/images/xnk.png"
+                                                                                   alt="Lớp học gia sư XNK"></a>
         </div>
-        <div class="header-2-3">
-            <div class="top-menu">
-                <div class="langbar" align="right">
-                    <a href="<?php echo url_for2('homepage',array('lang'=>'vi')) ?>"><?php echo __('Tiếng Việt'); ?></a> | <a href="<?php echo url_for2('homepage',array('lang'=>'en')) ?>">English</a> | <a href="<?php echo url_for2('homepage',array('lang'=>'ko')) ?>">Korean</a>
-                </div>
-            </div>
-            <div class="hotline-banner hide-on-mobile hide-on-tab hide-on-pad">
-                <div class="col-1-3">
-                    <div class="hotline-header">
-                        <a href="tel:0971.000.953">0934.559.019 <i class="fa fa-caret-down"></i></a>
-
-                        <div class="box">
-<!--                            <div> Newland 1: 043.5558818 - 0982.208.267</div>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1-3">
-                    <div class="email-header">
-                        <a href="mailto:info@newlandhouse.vn">info@nehobcity.com <i
-                                    class="fa fa-caret-down"></i></a>
-
-                        <div class="box">
-<!--                            <div> Newland 1: nl1@newlandhouse.vn</div>-->
-                        </div>
-                    </div>
-                </div>
-<!--                <div class="col-1-3">-->
-<!--                    <div class="feedback-header"><a href="/feedback/">Feedback</a></div>-->
-<!--                </div>-->
-            </div>
-            <div class="menubar" id="menubar">
-                <ul class="nav hide-on-pad hide-on-tab hide-on-mobile" id="navbar">
-                    <li class=" active">
-                        <a href="/"><?php echo __("Trang chủ"); ?></a>
-                    </li>
-                    <li class="">
-                        <a href="<?php echo url_for2('about_us'); ?>"><?php echo __('Về chúng tôi') ?></a>
-                    </li>
-                    <li class="">
-                        <a href="<?php echo url_for2('chain'); ?>"><?php echo __("Căn hộ") ?></a>
-                    </li>
-                    <li class="">
-                        <a href="<?php echo url_for2('services'); ?>"><?php echo __('Dịch vụ') ?></a>
-                    </li>
-                    <li class="">
-                        <a href="<?php echo url_for1('@photo') ?>"><?php echo __('Bộ sưu tập') ?></a>
-                        <?php
-                            if(isset($listAlbum) && count($listAlbum)){
-                                echo '<ul class="mnu-one-col">';
-                                foreach ($listAlbum as $album){
-                                    ?>
-                                    <li><a href="<?php echo url_for1('@category_photo?slug='.$album['slug']) ?>"><?php echo $album['name']; ?></a></li>
-                                    <?php
-                                }
-                                echo '</ul>';
-                            }
-                        ?>
-                    </li>
-                    <li class="">
-                        <a href="<?php echo url_for2('news'); ?>"><?php echo __('Tin tức') ?></a>
-                    </li>
-                    <li class="">
-                        <a href="<?php echo url_for2('contact_us'); ?>"><?php echo __('Liên hệ') ?></a>
-                    </li>
-
-                </ul>
-                <ul class="nav hide-on-pc " id="navmobile">
-                    <li><a href="#menu" class="fa fa-bars"></a></li>
-                    <li class="active"><a href="/" class="fa fa-home"></a></li>
-                </ul>
-            </div>
-        </div>
-        <div style="clear:both"></div>
-    </div>
-    <div class="menubar menubarmobile" id="menubar-mobile" style="position:relative">
-        <a href="/" class="fa fa-home"></a>
-        <a href="#menu" class="fa fa-bars"></a>
-        <a href="/" class="fa fa-search" id="btn-search-mobile"></a>
-
-        <div class="box-search-mobile">
-            <form action="/search/" id="searchformmobile">
-                <input name="qr" placeholder="Keyword" type="text">
-                <a class="fa fa-share" href="#" onClick="$('#searchformmobile').submit(); return false"></a>
-            </form>
+        <div class="navbar-collapse collapse">
+            <ul id="menu-main-menu" class="nav navbar-nav navbar-right">
+                <li id="menu-item-314"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-314 active">
+                    <a title="Home" href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/">Home</a></li>
+                <li id="menu-item-260"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-260 dropdown">
+                    <a title="About" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">About
+                        <span class="caret"></span></a>
+                    <ul role="menu" class=" dropdown-menu">
+                        <li id="menu-item-267"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a
+                                    title="Stuff"
+                                    href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/#meet-our-stuff">Stuff</a>
+                        </li>
+                        <li id="menu-item-268"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a
+                                    title="Mission"
+                                    href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/#our-mission">Mission</a>
+                        </li>
+                        <li id="menu-item-266"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266"><a
+                                    title="Activities"
+                                    href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/#activities">Activities</a>
+                        </li>
+                        <li id="menu-item-265"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a
+                                    title="Testimonials"
+                                    href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/#testimonials">Testimonials</a>
+                        </li>
+                        <li id="menu-item-264"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a
+                                    title="Gallery"
+                                    href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/#gallery">Gallery</a>
+                        </li>
+                        <li id="menu-item-263"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-263"><a
+                                    title="Membership"
+                                    href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/#membership">Membership</a>
+                        </li>
+                    </ul>
+                </li>
+                <li id="menu-item-2478"
+                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2478 dropdown">
+                    <a title="Schedule" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">Schedule
+                        <span class="caret"></span></a>
+                    <ul role="menu" class=" dropdown-menu">
+                        <li id="menu-item-2479"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2479"><a
+                                    title="Schedule Section"
+                                    href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/#schedule">Schedule
+                                Section</a></li>
+                        <li id="menu-item-2480"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2480"><a
+                                    title="Timetable for WordPress"
+                                    href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/timetable-for-wordpress/">Timetable
+                                for WordPress</a></li>
+                        <li id="menu-item-2481"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2481"><a
+                                    title="Timetable for WordPress sample 2"
+                                    href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/timetable-for-wordpress-sample-2/">Timetable
+                                for WordPress sample 2</a></li>
+                        <li id="menu-item-2482"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2482"><a
+                                    title="Timetable for WordPress sample 3"
+                                    href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/timetable-for-wordpress-sample-3/">Timetable
+                                for WordPress sample 3</a></li>
+                        <li id="menu-item-2483"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2483"><a
+                                    title="Timetable for WordPress sample 4"
+                                    href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/timetable-for-wordpress-sample-4/">Timetable
+                                for WordPress sample 4</a></li>
+                        <li id="menu-item-2484"
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2484"><a
+                                    title="Timetable for WordPress sample 5"
+                                    href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/timetable-for-wordpress-sample-5/">Timetable
+                                for WordPress sample 5</a></li>
+                    </ul>
+                </li>
+                <li id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141"><a
+                            title="Shortcodes"
+                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/shortcodes/">Shortcodes</a>
+                </li>
+                <li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-139"><a
+                            title="Blog" href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/blog/">Blog</a>
+                </li>
+                <li id="menu-item-292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-292"><a
+                            title="Contact" href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/#contact-us">Contact</a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
-
-<div class="line-header"></div>

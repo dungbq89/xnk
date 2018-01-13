@@ -17,10 +17,6 @@ class pageHomeActions extends sfActions
         if($seoHomePage){
             $this->returnHtmlSeoPage($seoHomePage);
         }
-        //Lấy danh sách sản phẩm theo chuyên mục
-        $productCategory = VtpProductsCategoryTable::getProductCategoryHome('',4)->execute();
-        $this->productCategory = $productCategory;
-        $this->form = new FormBooking();
     }
 
     //render meta tag
@@ -37,35 +33,5 @@ class pageHomeActions extends sfActions
         $this->getResponse()->addMeta('dc.title', $seo_homepage['dc_title']);
         $this->getResponse()->addMeta('dc.keywords', $seo_homepage['dc_keywords']);
         $this->getResponse()->addMeta('news_keywords', $seo_homepage['news_keywords']);
-    }
-
-    public function executeGetProductByCatId(sfWebRequest $request){
-        $id = $request->getParameter('catid');
-        $strProduct = "<option selected='selected' value=''>Chọn loại phòng</option>";
-        if($id){
-            $products = VtpProductsTable::getProductByCatId($id, 50)->fetchArray();
-            if(count($products)>0){
-                $strProduct = "";
-                foreach($products as $value){
-                    $strProduct .= "<option value=".$value['id'].">".$value['product_name']."</option>";
-                }
-            }
-        }
-        return $this->renderText(json_encode($strProduct));
-    }
-
-    public function executeBookingRoom(sfWebRequest $request) {
-        $form = new FormBooking();
-        $form->bind($request->getParameter($form->getName()));
-        $data['error'] = false;
-        if ($form->isValid()) {
-            if ($form->save()) {
-                return $this->renderText(json_encode($data));
-            }
-        } else {
-            $data['error'] = true;
-            $data['html'] = $this->getPartial("pageHome/booking", array('form' => $form));
-        }
-        return $this->renderText(json_encode($data));
     }
 }
