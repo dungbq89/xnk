@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Lớp học gia sư XNK</title>
+    <title>Lớp học Gia sư Xuất nhập khẩu- CLB Xuất Nhập Khẩu Hà Nội</title>
     <?php include_http_metas() ?>
     <?php include_metas() ?>
     <?php include_title() ?>

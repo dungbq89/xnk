@@ -25,8 +25,8 @@
 
             var mapOptions = {
                 scrollwheel: false,
-                zoom: 5,
-                center: new google.maps.LatLng(52.2393167, 21.0214167),
+                zoom: 16,
+                center: new google.maps.LatLng(21.024750, 105.805687),
                 mapTypeControlOptions: {
                     mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
                 }
@@ -43,12 +43,12 @@
             });
         }
 
-        var places = [['Moscow', 55.7600667, 37.6194667, 1, 'Suspendisse%20est%20dolor%2C%20adipiscing%20eget%20suscipit%20ac%2C%20gravida%20nec%20massa.%20Donec%20commodo%20erat%20eget%20nisi%20ultricies%20mattis.%20In%20molestie%20laoreet%20enim%2C%20et%20scelerisque%20sapien%20gravida%20in.%20Phasellus%20vestibulum%20scelerisque%20pulvinar.%20Integer%20lacinia%20tristique%20urna%20at%20dignissim.'], ['Warsaw', 52.2393167, 21.0214167, 1, 'Suspendisse%20est%20dolor%2C%20adipiscing%20eget%20suscipit%20ac%2C%20gravida%20nec%20massa.%20Donec%20commodo%20erat%20eget%20nisi%20ultricies%20mattis.%20In%20molestie%20laoreet%20enim%2C%20et%20scelerisque%20sapien%20gravida%20in.%20Phasellus%20vestibulum%20scelerisque%20pulvinar.%20Integer%20lacinia%20tristique%20urna%20at%20dignissim.'], ['Berlin', 52.52665, 13.3858, 1, 'Suspendisse%20est%20dolor%2C%20adipiscing%20eget%20suscipit%20ac%2C%20gravida%20nec%20massa.%20Donec%20commodo%20erat%20eget%20nisi%20ultricies%20mattis.%20In%20molestie%20laoreet%20enim%2C%20et%20scelerisque%20sapien%20gravida%20in.%20Phasellus%20vestibulum%20scelerisque%20pulvinar.%20Integer%20lacinia%20tristique%20urna%20at%20dignissim.'], ['Paris', 48.8582333, 2.3518167, 1, 'Suspendisse%20est%20dolor%2C%20adipiscing%20eget%20suscipit%20ac%2C%20gravida%20nec%20massa.%20Donec%20commodo%20erat%20eget%20nisi%20ultricies%20mattis.%20In%20molestie%20laoreet%20enim%2C%20et%20scelerisque%20sapien%20gravida%20in.%20Phasellus%20vestibulum%20scelerisque%20pulvinar.%20Integer%20lacinia%20tristique%20urna%20at%20dignissim.'],];
+        var places = [['CLB Xuất nhập khẩu HN', 21.024750, 105.805687, 1, 'L\u1edbp h\u1ecdc Gia s\u01b0 Xu\u1ea5t nh\u1eadp kh\u1ea9u- CLB Xu\u1ea5t Nh\u1eadp Kh\u1ea9u H\u00e0 N\u1ed9i']];
 
         function setMarkers(map, locations) {
             // Add markers to the map
             var image = {
-                url: 'http://www.coffeecreamthemes.com/themes/magicreche/wordpress/wp-content/uploads/2014/03/marker.png',
+                url: './images/marker.png',
                 // This marker is 40 pixels wide by 42 pixels tall.
                 size: new google.maps.Size(40, 42),
                 // The origin for this image is 0,0.
