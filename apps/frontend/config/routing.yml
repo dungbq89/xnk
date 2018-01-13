@@ -46,8 +46,8 @@ news:
   url: /news
   param: {module: pageNews, action: index}
 category_new:
-  url: /news/:slug
-  param: {module: pageNews, action: categoryNews}
+  url: /news/:slug/:page
+  param: {module: pageNews, action: categoryNews, page: 1}
 news_detail:
   url: /news-detail/:slug
   param: {module: pageNews, action: newDetail}

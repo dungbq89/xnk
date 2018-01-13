@@ -103,19 +103,19 @@
         }
     </style>
     <link rel='stylesheet' id='contact-form-7-css'
-          href='tvdt/themes/magicreche/wordpress/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.9.1'
+          href='/tvdt/themes/magicreche/wordpress/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.9.1'
           type='text/css' media='all'/>
     <link rel='stylesheet' id='timetable_sf_style-css'
-          href='tvdt/themes/magicreche/wordpress/wp-content/plugins/timetable/style/superfish.css?ver=4.9.1'
+          href='/tvdt/themes/magicreche/wordpress/wp-content/plugins/timetable/style/superfish.css?ver=4.9.1'
           type='text/css' media='all'/>
     <link rel='stylesheet' id='timetable_style-css'
-          href='tvdt/themes/magicreche/wordpress/wp-content/plugins/timetable/style/style.css?ver=4.9.1'
+          href='/tvdt/themes/magicreche/wordpress/wp-content/plugins/timetable/style/style.css?ver=4.9.1'
           type='text/css' media='all'/>
     <link rel='stylesheet' id='timetable_event_template-css'
-          href='tvdt/themes/magicreche/wordpress/wp-content/plugins/timetable/style/event_template.css?ver=4.9.1'
+          href='/tvdt/themes/magicreche/wordpress/wp-content/plugins/timetable/style/event_template.css?ver=4.9.1'
           type='text/css' media='all'/>
     <link rel='stylesheet' id='timetable_responsive_style-css'
-          href='tvdt/themes/magicreche/wordpress/wp-content/plugins/timetable/style/responsive.css?ver=4.9.1'
+          href='/tvdt/themes/magicreche/wordpress/wp-content/plugins/timetable/style/responsive.css?ver=4.9.1'
           type='text/css' media='all'/>
     <link rel='stylesheet' id='font-awesome-css'
           href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css?ver=4.9.1' type='text/css'
@@ -126,23 +126,23 @@
     <link rel='stylesheet' id='magicreche-pacifico-css'
           href='http://fonts.googleapis.com/css?family=Pacifico&#038;ver=4.9.1' type='text/css' media='all'/>
     <link rel='stylesheet' id='bootstrap-css'
-          href='tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/css/bootstrap.min.css?ver=4.9.1'
+          href='/tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/css/bootstrap.min.css?ver=4.9.1'
           type='text/css' media='all'/>
     <link rel='stylesheet' id='fancybox-css'
-          href='tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/css/jquery.fancybox.css?ver=4.9.1'
+          href='/tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/css/jquery.fancybox.css?ver=4.9.1'
           type='text/css' media='all'/>
     <link rel='stylesheet' id='style-css'
-          href='tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/style.css?ver=4.9.1'
+          href='/tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/style.css?ver=4.9.1'
           type='text/css' media='all'/>
     <link rel='stylesheet' id='ot-dynamic-custom_css-css'
-          href='tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche-child/dynamic.css?ver=2.5.4'
+          href='/tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche-child/dynamic.css?ver=2.5.4'
           type='text/css' media='all'/>
     <script type='text/javascript'
-            src='tvdt/themes/magicreche/wordpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+            src='/tvdt/themes/magicreche/wordpress/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
     <script type='text/javascript'
-            src='tvdt/themes/magicreche/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+            src='/tvdt/themes/magicreche/wordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
     <script type='text/javascript'
-            src='tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/modernizr.custom.97074.js?ver=1.0'></script>
+            src='/tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/modernizr.custom.97074.js?ver=1.0'></script>
     <style type="text/css">.recentcomments a {
             display: inline !important;
             padding: 0 !important;
@@ -151,17 +151,20 @@
 
 </head>
 <body class="home page-template-default page page-id-9 page-parent layout-wide">
+
 <?php include_component('moduleMenu','header') ?>
 
 <?php echo $sf_content;?>
 
 <?php include_component('moduleMenu','footer'); ?>
+
 <link rel='stylesheet' id='mediaelement-css'
-      href='tvdt/themes/magicreche/wordpress/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.6-78496d1'
+      href='/tvdt/themes/magicreche/wordpress/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.6-78496d1'
       type='text/css' media='all'/>
 <link rel='stylesheet' id='wp-mediaelement-css'
-      href='tvdt/themes/magicreche/wordpress/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=4.9.1'
+      href='/tvdt/themes/magicreche/wordpress/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=4.9.1'
       type='text/css' media='all'/>
+<link rel='stylesheet' href='/tvdt/themes/css/css_update.css' type='text/css' media='all'/>
 <script type='text/javascript'>
     /* <![CDATA[ */
     var wpcf7 = {
@@ -173,41 +176,41 @@
     /* ]]> */
 </script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.9.1'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.9.1'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-content/plugins/timetable/js/jquery.ba-bbq.min.js?ver=4.9.1'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-content/plugins/timetable/js/jquery.ba-bbq.min.js?ver=4.9.1'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-content/plugins/timetable/js/jquery.carouFredSel-6.2.1-packed.js?ver=4.9.1'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-content/plugins/timetable/js/jquery.carouFredSel-6.2.1-packed.js?ver=4.9.1'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-content/plugins/timetable/js/timetable.js?ver=4.9.1'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-content/plugins/timetable/js/timetable.js?ver=4.9.1'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-content/plugins/wp-retina-2x/js/retina.min.js?ver=2.0.0'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-content/plugins/wp-retina-2x/js/retina.min.js?ver=2.0.0'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/bootstrap.min.js?ver=1.0'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/bootstrap.min.js?ver=1.0'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/owl.carousel.js?ver=1.0'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/owl.carousel.js?ver=1.0'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/jquery.fancybox.js?ver=1.0'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/jquery.fancybox.js?ver=1.0'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/jquery.fitvids.js?ver=1.0'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/jquery.fitvids.js?ver=1.0'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/main.js?ver=1.0'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/main.js?ver=1.0'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-includes/js/wp-embed.min.js?ver=4.9.1'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-includes/js/wp-embed.min.js?ver=4.9.1'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/jquery.animate-enhanced.min.js?ver=1.0'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/jquery.animate-enhanced.min.js?ver=1.0'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/jquery.easing.1.3.js?ver=1.0'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/jquery.easing.1.3.js?ver=1.0'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/jquery.superslides.js?ver=1.0'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/jquery.superslides.js?ver=1.0'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/jquery.hoverdir.js?ver=1.0'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/js/jquery.hoverdir.js?ver=1.0'></script>
 <script type='text/javascript'>
     var mejsL10n = {
         "language": "en",
@@ -300,9 +303,9 @@
     };
 </script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.6-78496d1'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.6-78496d1'></script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=4.9.1'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=4.9.1'></script>
 <script type='text/javascript'>
     /* <![CDATA[ */
     var _wpmejsSettings = {
@@ -313,6 +316,6 @@
     /* ]]> */
 </script>
 <script type='text/javascript'
-        src='tvdt/themes/magicreche/wordpress/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=4.9.1'></script>
+        src='/tvdt/themes/magicreche/wordpress/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=4.9.1'></script>
 </body>
 </html>

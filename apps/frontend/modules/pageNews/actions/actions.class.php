@@ -28,14 +28,16 @@ class pageNewsActions extends sfActions
         if ($slug) {
             $category = VtpCategoryTable::getCategoryBySlug($slug);
             if ($category) {
+                $limit = 5;
                 $this->catName = $category->getName();
                 $this->url_paging = 'category_new';
                 $this->page = $this->getRequestParameter('page', 1);
-                $pager = new sfDoctrinePager('AdArticle', 4);
+                $pager = new sfDoctrinePager('AdArticle', $limit);
                 $pager->setQuery(AdArticleTable::getListArticle($category->getId()));
                 $pager->setPage($this->page);
                 $pager->init();
                 $this->pager = $pager;
+                $this->category = $category;
                 $this->listArticle = $pager->getResults();
             } else {
                 return $this->redirect404();

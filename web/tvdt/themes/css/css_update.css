@@ -1,0 +1,116 @@
+@media (min-width: 768px) {
+    .blog-item {
+        max-width: 33%;
+        float: left;
+    }
+
+    .post-content-item-left img {
+        float: left;
+        padding: 0px 10px 0px 0px;
+    }
+
+    .post-content-item-left .post-thumb {
+        float: left;
+        width: 50%;
+    }
+
+    .post-content-item-right img {
+        float: right;
+        padding: 0px 10px 0px 0px;
+    }
+
+    .post-content-item-right .post-thumb {
+        float: right;
+        width: 50%;
+    }
+
+    .entry-content .entry-content-p {
+        padding-top: 30px;
+        position: relative;
+    }
+
+
+    .post-content-item-left .entry-content .entry-content-p:after {
+        content: '';
+        position: absolute;
+        background: #e75d5d;
+        width: 4.5em;
+        height: 0.175em;
+        left: 50%;
+        right: 0;
+        margin: 0 auto;
+        bottom: -0.125em;
+    }
+
+    .post-content-item-right .entry-content .entry-content-p:after {
+        content: '';
+        position: absolute;
+        background: #e75d5d;
+        width: 4.5em;
+        height: 0.175em;
+        left: -50%;
+        right: 0;
+        margin: 0 auto;
+        bottom: -0.125em;
+    }
+
+}
+
+.post-content-item-right .entry-content, .post-content-item-left .entry-content {
+    text-align: center;
+}
+
+.post-content-item-right .entry-content .entry-content-p, .post-content-item-left .entry-content .entry-content-p {
+    font-size: 1.875em;
+    line-height: 1.6;
+    letter-spacing: 0.04em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #e75d5d;
+}
+
+
+.post-content-item-right .entry-content .entry-content-p:hover, .post-content-item-left .entry-content .entry-content-p:hover {
+    cursor: pointer;
+}
+
+.post-thumb a > img {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.block-line {
+    clear: both;
+}
+
+.more-link {
+    position: relative;
+    text-decoration: none;
+    color: #e75d5d;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+}
+
+.more-link:focus, .more-link:hover {
+    color: #e75d5d;
+}
+
+.pagination {
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-top: 0;
+    padding-left: 15px;
+}
+
+.paging-bottom-style1 {
+
+    text-align: center;
+}
+
+.pagination a:last-child {
+    float: left;
+    font-weight: bold;
+}
