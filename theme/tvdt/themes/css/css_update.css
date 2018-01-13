@@ -1,0 +1,50 @@
+@media (min-width: 768px) {
+    .blog-item {
+        max-width: 33%;
+        float: left;
+    }
+
+    .post-content-item-left img {
+        float: left;
+        padding: 0px 10px 0px 0px;
+    }
+
+    .post-content-item-left .post-thumb {
+        float: left;
+        width: 50%;
+    }
+    .post-content-item-right img {
+        float: right;
+        padding: 0px 10px 0px 0px;
+    }
+
+    .post-content-item-right .post-thumb {
+        float: right;
+        width: 50%;
+    }
+
+    .entry-content .entry-content-p {
+        padding-top: 30px;
+    }
+}
+
+.block-line {
+    clear: both;
+}
+
+.pagination {
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-top: 0;
+    padding-left: 15px;
+}
+
+.paging-bottom-style1 {
+
+    text-align: center;
+}
+
+.pagination a:last-child {
+    float: left;
+    font-weight: bold;
+}
