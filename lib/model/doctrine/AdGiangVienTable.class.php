@@ -16,4 +16,12 @@ class AdGiangVienTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('AdGiangVien');
     }
+
+    public static function getAllTeacher()
+    {
+        return AdGiangVienTable::getInstance()->createQuery()
+            ->where('is_active=1')
+            ->orderBy('priority desc')
+            ->fetchArray();
+    }
 }

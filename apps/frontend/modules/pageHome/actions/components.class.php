@@ -14,12 +14,16 @@ class pageHomeComponents extends sfComponents
     }
     public function executeTeacher(sfWebRequest $request)
     {
-
+        $this->teachers = AdGiangVienTable::getAllTeacher();
     }
 
     public function executeStudent(sfWebRequest $request)
     {
-
+        $this->students = AdHocVienTable::getAllStudent();
     }
 
+    public function executeMaps(sfWebRequest $request)
+    {
+
+    }
 }

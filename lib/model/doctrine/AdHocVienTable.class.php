@@ -16,4 +16,12 @@ class AdHocVienTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('AdHocVien');
     }
+
+    public static function getAllStudent()
+    {
+        return AdHocVienTable::getInstance()->createQuery()
+            ->where('is_active=1')
+            ->orderBy('priority desc')
+            ->fetchArray();
+    }
 }
