@@ -7,7 +7,7 @@
  */
 ?>
 
-<div class="col-sm-4 sidebar">
+<div class="col-sm-4 sidebar" id="pageNewNav">
     <aside id="search-3" class="widget widget_search">
         <div class="searchbox">
             <form role="search" method="get" id="searchform"
@@ -22,29 +22,50 @@
     <aside id="recent-posts-3" class="widget widget_recent_entries"><h5>NÓI VỀ CHÚNG TÔI</h5>
         <ul>
             <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/image-post/">Image
-                    Post</a>
+                <div class="sqs-block-content">
+                    <figure>
+                        <blockquote>
+                            <span>“</span>Phương pháp huấn luyện của cô Lan Bercu thực tế và hữu ích. Tôi sẽ về ứng dụng
+                            ngay cho team của mình.<span>”</span>
+                        </blockquote>
+                        <figcaption class="source">— - Nguyễn Lâm Nguyệt Kiều, Giám Đốc Marketing MASAN</figcaption>
+                    </figure>
+                </div>
             </li>
             <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/gallery-post/">Gallery
-                    Post</a>
+                <div class="sqs-block-content">
+                    <figure>
+                        <blockquote>
+                            <span>“</span>Phương pháp huấn luyện của cô Lan Bercu thực tế và hữu ích. Tôi sẽ về ứng dụng
+                            ngay cho team của mình.<span>”</span>
+                        </blockquote>
+                        <figcaption class="source">— - Nguyễn Lâm Nguyệt Kiều, Giám Đốc Marketing MASAN</figcaption>
+                    </figure>
+                </div>
             </li>
             <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/audio-post/">Audio
-                    Post</a>
+                <div class="sqs-block-content">
+                    <figure>
+                        <blockquote>
+                            <span>“</span>Phương pháp huấn luyện của cô Lan Bercu thực tế và hữu ích. Tôi sẽ về ứng dụng
+                            ngay cho team của mình.<span>”</span>
+                        </blockquote>
+                        <figcaption class="source">— - Nguyễn Lâm Nguyệt Kiều, Giám Đốc Marketing MASAN</figcaption>
+                    </figure>
+                </div>
             </li>
-            <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/video-post/">Video
-                    Post</a>
-            </li>
-            <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/video-post-2/">Video
-                    Post</a>
-            </li>
+
         </ul>
     </aside>
     <hr>
     <aside id="recent-posts-3" class="widget widget_recent_entries"><h5>Quảng cáo</h5>
+        <ul>
+            <li>
+                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/image-post/">
+                    <img src="http://nehobcity.xyz/cache/uploads/article/8f/2e/e8/5a5b6d1b86256_321_184.jpg">
+                </a>
+            </li>
+        </ul>
     </aside>
     <hr>
     <aside id="recent-posts-3" class="widget widget_recent_entries"><h5>CÁC BÀI VIẾT MỚI</h5>
@@ -122,18 +143,5 @@
         </ul>
     </aside>
     <hr>
-    <aside id="meta-4" class="widget widget_meta"><h5>Meta</h5>
-        <ul>
-            <li><a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/wp-login.php">Log in</a>
-            </li>
-            <li><a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/feed/">Entries <abbr
-                        title="Really Simple Syndication">RSS</abbr></a></li>
-            <li><a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/comments/feed/">Comments
-                    <abbr title="Really Simple Syndication">RSS</abbr></a></li>
-            <li><a href="https://wordpress.org/"
-                   title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a>
-            </li>
-        </ul>
-    </aside>
-    <hr>
+
 </div>
