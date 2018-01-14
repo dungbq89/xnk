@@ -16,4 +16,14 @@ class AdActivityTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('AdActivity');
     }
+
+    public static function getAllValues($type, $limit = 10)
+    {
+        return AdActivityTable::getInstance()->createQuery()
+            ->where('is_active=1')
+            ->andWhere('type=?',$type)
+            ->orderBy('priority desc')
+            ->limit($limit)
+            ->fetchArray();
+    }
 }

@@ -74,12 +74,20 @@
             padding: 0 !important;
             margin: 0 !important;
         }</style>
-    <style type="text/css">
-        #menu-main-menu li a{
-            line-height: 90px;
+
+    <style>
+        .navbar-nav > li > a {
+            line-height: 90px !important;
+        }
+
+        body {
+            padding-top: 90px !important;
+        }
+
+        .single-events .tt_event_theme_page {
+            margin-top: 140px !important;
         }
     </style>
-
 </head>
 <body class="home page-template-default page page-id-9 page-parent layout-wide">
 <?php include_component('moduleMenu','header') ?>
