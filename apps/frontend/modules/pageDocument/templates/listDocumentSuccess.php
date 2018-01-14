@@ -15,7 +15,7 @@ $n = count($listDocument);
                 if ($n > 0) {
                     $dem = 1;
                     foreach ($listDocument as $doc) {
-                        $path = '/uploads/' . sfConfig::get('app_article_images') . $doc->getImage();
+                        $path = ($doc->getImage() != '') ? '/uploads/' . sfConfig::get('app_article_images') . $doc->getImage() : sfConfig::get('app_image_default', 'http://nehobcity.com/images/default.jpg');
                         $pathDoc = $doc->link;
                         if ($dem % 3 == 1) echo '<div class="block-line">';
                         ?>

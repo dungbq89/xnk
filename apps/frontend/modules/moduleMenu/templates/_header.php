@@ -11,23 +11,23 @@
             <ul id="menu-main-menu" class="nav navbar-nav navbar-right">
                 <li id="menu-item-314"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-314 active">
-                    <a title="Home" href="">Trang chủ</a>
+                    <a title="Home" href="/">Trang chủ</a>
                 </li>
                 <li id="menu-item-314"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-314">
-                    <a title="Home" href="">Tự học</a>
+                    <a title="Home" href="<?php echo url_for1('@category_new?slug=tu-hoc') ?>">Tự học</a>
                 </li>
                 <li id="menu-item-314"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-314">
-                    <a title="Home" href="">Videos</a>
+                    <a title="Home" href="<?php echo url_for1('@videopage') ?>">Videos</a>
                 </li>
                 <li id="menu-item-314"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-314">
-                    <a title="Home" href="">Kỹ năng</a>
+                    <a title="Home" href="<?php echo url_for1('@category_new?slug=ky-nang') ?>">Kỹ năng</a>
                 </li>
                 <li id="menu-item-314"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-314">
-                    <a title="Home" href="">Kho tài liệu</a>
+                    <a title="Home" href="<?php echo url_for1('@listDocument') ?>">Kho tài liệu</a>
                 </li>
             </ul>
         </div>

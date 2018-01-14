@@ -25,6 +25,7 @@ all:
   document: document
   member_images: member
   image_default: 'http://nehobcity.com/images/default.jpg'
+  image_default_video_default: 'http://nehobcity.com/images/default.jpg'
   upload_media_file: "E:\app\project\dungbq3\xnk\xnk\web\uploads"
   url_media_file: http://localhost:9763/uploads
   url_media_default_file: http://localhost:9763/images/default-image.jpg
