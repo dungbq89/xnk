@@ -13,6 +13,7 @@
         float: left;
         width: 50%;
     }
+
     .post-content-item-right img {
         float: right;
         padding: 0px 10px 0px 0px;
@@ -47,4 +48,44 @@
 .pagination a:last-child {
     float: left;
     font-weight: bold;
+}
+
+/*hover image doanload*/
+
+.post-thumb {
+    position: relative;
+}
+
+.post-thumb-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.post-thumb-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #888888;
+}
+
+.post-thumb:hover .post-thumb-overlay {
+    opacity: 0.95;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }

@@ -16,4 +16,18 @@ class AdDocumentDownloadTable extends Doctrine_Table
     {
         return Doctrine_Core::getTable('AdDocumentDownload');
     }
+
+
+    public function getListDocumentDownload($limit, $page)
+    {
+        $query = $this->createQuery()
+            ->where('is_active=?', VtCommonEnum::NUMBER_ONE)
+            ->orderBy('updated_at desc, priority asc');
+
+        $pager = new sfDoctrinePager('AdDocumentDownload', $limit);
+        $pager->setQuery($query);
+        $pager->setPage($page);
+        $pager->init();
+        return $pager;
+    }
 }

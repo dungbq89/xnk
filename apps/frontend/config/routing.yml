@@ -87,6 +87,10 @@ introduction:
 page_search:
   url:  /tim-kiem
   param: { module: pageSearch, action: index}
+# trang document
+listDocument:
+  url:  /kho-tai-lieu/:page
+  param: { module: pageDocument, action: listDocument, page: 1}
 
   
 #trang danh ba hoi vien
