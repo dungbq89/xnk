@@ -1,4 +1,9 @@
+<?php slot('title') ?>
+<?php echo sprintf('%s', 'Tìm kiếm: ' . htmlentities($query)) ?>
+<?php end_slot() ?>
+
 <?php
+
 if ($pager) {
     $listVideo = $pager->getResults();
     $n = count($listVideo);

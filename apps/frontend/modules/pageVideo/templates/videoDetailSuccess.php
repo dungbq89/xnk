@@ -1,6 +1,7 @@
-<?php
+<?php slot('title') ?>
+<?php echo sprintf('%s', htmlentities($video['name'])) ?>
+<?php end_slot() ?>
 
-?>
 <header><h1><?php echo htmlspecialchars($video['name']) ?></h1>
 </header>
 

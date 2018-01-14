@@ -1,6 +1,7 @@
-<?php
+<?php slot('title') ?>
+<?php echo sprintf('%s', htmlentities($article['title'])) ?>
+<?php end_slot() ?>
 
-?>
 <header><h1><?php echo htmlentities($article['title']) ?></h1>
 </header>
 

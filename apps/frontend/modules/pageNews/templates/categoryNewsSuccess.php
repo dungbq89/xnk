@@ -1,3 +1,7 @@
+<?php slot('title') ?>
+<?php echo sprintf('%s', 'We can do it, You can do it better') ?>
+<?php end_slot() ?>
+
 <header><h1><?php echo (isset($catName) && $catName != '') ? $catName : 'We can do it, You can do it better' ?></h1>
 </header>
 
@@ -9,6 +13,6 @@
             'cat' => $category,
         )) ?>
 
-        <?php include_component('pageNews', 'catNewNav', array('type'=>3)) ?>
+        <?php include_component('pageNews', 'catNewNav', array('type' => 3)) ?>
     </div>
 </div>

@@ -1,3 +1,7 @@
+<?php slot('title') ?>
+<?php echo sprintf('%s', 'We can do it, You can do it better') ?>
+<?php end_slot() ?>
+
 <?php
 $listDocument = $pager->getResults();
 $n = count($listDocument);
