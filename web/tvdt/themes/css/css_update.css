@@ -1,3 +1,15 @@
+.navbar-nav > li > a {
+    line-height: 90px !important;
+}
+
+body {
+    padding-top: 90px !important;
+}
+
+.single-events .tt_event_theme_page {
+    margin-top: 140px !important;
+}
+
 @media (min-width: 768px) {
     .blog-item {
         max-width: 33%;
@@ -153,7 +165,7 @@
     text-align: center;
 }
 
-#catNewContent .entry-content-p p, #catNewContent .entry-title p {
+#catNewContent .entry-content-p p, #catNewContent .entry-title p, #pageNewNav p.post-title {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -161,4 +173,19 @@
 
 .entry-content .entry-meta {
     text-align: left;
+}
+
+#pageVideo h2.entry-title {
+    text-align: center;
+}
+
+/*nav trang new*/
+/*noi ve chung toi*/
+#pageNewNav figure blockquote {
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: .01em;
+    line-height: 1.5em;
 }

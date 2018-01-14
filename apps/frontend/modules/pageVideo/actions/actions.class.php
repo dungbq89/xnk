@@ -17,7 +17,7 @@ class pageVideoActions extends sfActions
      */
     public function executeIndex(sfWebRequest $request)
     {
-        $limit = sfConfig::get('app_limit_videos', 10);
+        $limit = sfConfig::get('app_limit_videos', 9);
         $pager = AdYoutubeTable::getInstance()->getListSqlVideoYT($limit, $request->getParameter('page', 1));
         $this->pager = $pager;
     }

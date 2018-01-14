@@ -2,7 +2,10 @@
 $listVideo = $pager->getResults();
 $n = count($listVideo);
 ?>
-<section id="latest-posts" class="post-18 page type-page status-publish hentry">
+<header><h1></h1>
+</header>
+
+<section id="latest-posts pageVideo" class="post-18 page type-page status-publish hentry">
     <div class="container">
         <?php
         if ($n > 0) {

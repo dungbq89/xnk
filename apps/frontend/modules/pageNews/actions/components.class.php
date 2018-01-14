@@ -12,7 +12,10 @@ class pageNewsComponents extends sfComponents
 {
     public function executeCatNewNav(sfWebRequest $request)
     {
-
+        // tin moi nhat
+        $this->listNews = AdArticleTable::getInstance()->getListNewsV2(5);
+        // tin xem nhieu nhat
+        $this->listViews = AdArticleTable::getInstance()->getMostViewNewsV2(5);
     }
 
 }
