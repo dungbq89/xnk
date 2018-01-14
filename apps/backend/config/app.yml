@@ -68,6 +68,10 @@ all:
               credentials: [[admin]]
               route: ad_hoc_vien
               icon: users6.png
+            Giá trị & hoạt động:
+              credentials: [[admin]]
+              route: ad_activity
+              icon: users6.png
         Quản trị hệ thống:
           credentials: [admin]
           dropdown:

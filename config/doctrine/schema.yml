@@ -525,3 +525,15 @@ AdGiangVien:
     image: { type: string(255), notnull: true,  comment: "ảnh đại diện"}
     priority: { type: integer(5), notnull: true, comment: "Độ ưu tiên hiển thị" }
     is_active: { type: boolean, notnull: false, default: false, comment: "Trạng thái"}
+AdActivity:
+  #connection: doctrine
+  tableName: ad_activity
+  actAs:
+    Timestampable: ~
+  columns:
+    name: { type: string(255), notnull: true,  comment: "Tên giảng viên"}
+    description: { type: string(1000), notnull: true,  comment: "mô tả"}
+    image: { type: string(255), notnull: true,  comment: "ảnh đại diện"}
+    priority: { type: integer(5), notnull: true, comment: "Độ ưu tiên hiển thị" }
+    type: { type: integer(5), notnull: true, comment: "Loại chuyên mục" }
+    is_active: { type: boolean, notnull: false, default: false, comment: "Trạng thái"}
