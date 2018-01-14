@@ -10,12 +10,21 @@
  */
 class pageVideoActions extends sfActions
 {
- /**
-  * Executes index action
-  *
-  * @param sfRequest $request A request object
-  */
-  public function executeIndex(sfWebRequest $request)
-  {
-  }
+    /**
+     * Executes index action
+     *
+     * @param sfRequest $request A request object
+     */
+    public function executeIndex(sfWebRequest $request)
+    {
+        $limit = sfConfig::get('app_limit_videos', 10);
+        $pager = AdYoutubeTable::getInstance()->getListSqlVideoYT($limit, $request->getParameter('page', 1));
+        $this->pager = $pager;
+    }
+
+    public function executeVideoDetail(sfWebRequest $request)
+    {
+        $slug = $request->getParameter('slug');
+        $this->video = AdYoutubeTable::getInstance()->getVideoYTBySlug($slug);
+    }
 }

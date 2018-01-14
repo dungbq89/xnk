@@ -1130,6 +1130,12 @@ class VtHelper
         return sfConfig::get('app_url_media_file') . '/' . $prefix . $link;
     }
 
+
+    public static function getDateNew($date, $format = 'd-m-')
+    {
+        return date('d-m-Y', strtotime($date));
+    }
+
 }
 
 /**

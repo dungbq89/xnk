@@ -74,8 +74,11 @@ page_album:
   param: {module: pageAlbum, action: index, slug: ''}
 #trang gioi thieu
 videopage:
-  url: /video/:slug
-  param: {module: pageVideo, action: index, slug: ''}
+  url: /video/:page
+  param: {module: pageVideo, action: index, page: 1}
+videoDetail:
+  url: /video-detail/:slug
+  param: {module: pageVideo, action: videoDetail}
 #trang gioi thieu
 introduction:
   url: /gioi-thieu/:slug
