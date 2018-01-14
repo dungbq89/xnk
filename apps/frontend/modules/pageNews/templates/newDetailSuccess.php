@@ -15,15 +15,17 @@
                     <span class="date"><i class="fa fa-calendar"></i><time datetime="2018-01-13T17:08:58+00:00">March
                             13, 2014
                         </time></span>
-                    <span class="author"><i class="fa fa-user"></i>By Hleb Poltanovich</span>
-                    <span class="comments"><i class="fa fa-comment"></i><a href="#comments"> No Comments</a></span><span
-                        class="entry-categories"><i class="fa fa-tag"></i>Posted in <a
-                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/category/kids/"
-                            rel="category tag">Kids</a>, <a
-                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/category/toys/"
-                            rel="category tag">Toys</a></span><span class="entry-tags"><i
-                            class="fa fa-tags"></i>Tags: <a
-                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/tag/spring/" rel="tag">spring</a></span>
+<!--                    <span class="author"><i class="fa fa-user"></i>By Hleb Poltanovich</span>-->
+<!--                    <span class="comments"><i class="fa fa-comment"></i><a href="#comments"> No Comments</a></span>-->
+<!--                    <span-->
+<!--                        class="entry-categories"><i class="fa fa-tag"></i>Posted in <a-->
+<!--                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/category/kids/"-->
+<!--                            rel="category tag">Kids</a>, <a-->
+<!--                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/category/toys/"-->
+<!--                            rel="category tag">Toys</a></span>-->
+<!--                    <span class="entry-tags"><i-->
+<!--                            class="fa fa-tags"></i>Tags: <a-->
+<!--                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/tag/spring/" rel="tag">spring</a></span>-->
                 </div>
 
                 <div class="entry-content">

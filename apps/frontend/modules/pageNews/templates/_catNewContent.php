@@ -8,7 +8,7 @@
 $n = count($listArticle);
 ?>
 
-<div class="col-sm-8">
+<div class="col-sm-8" id="catNewContent">
 
     <div class="block-line">
         <?php if ($n > 0) {
@@ -19,22 +19,29 @@ $n = count($listArticle);
                 <div>
                     <div class="item blog-item">
                         <article class="post">
-                            <h2 class="entry-title"><a
-                                    href="<?php echo url_for1('@news_detail?slug=' . $new->slug) ?>"
-                                    rel="bookmark"><?php echo htmlspecialchars($new->title) ?></a></h2>
+                            <h2 class="entry-title">
+                                <p>
+                                    <a
+                                        href="<?php echo url_for1('@news_detail?slug=' . $new->slug) ?>"
+                                        rel="bookmark"><?php echo htmlspecialchars($new->title) ?></a>
+                                </p>
+                            </h2>
 
                             <div class="entry-meta">
                             <span class="date"><i class="fa fa-calendar"></i><time datetime="2018-01-11T01:29:26+00:00">
-                                    March 14, 2014
+                                    <?php echo VtHelper::getDateNew($new->created_at) ?>
                                 </time></span><br/>
-                                <span class="author"><i class="fa fa-user"></i>By Hleb Poltanovich</span><br/>
-                            <span class="comments"><i class="fa fa-comment"></i><a href="#comments"> 1
-                                    Comment</a></span><span class="entry-categories"><i class="fa fa-tag"></i>Posted in <a
-                                        href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/category/activities/"
-                                        rel="category tag">Activities</a></span><span class="entry-tags"><i
-                                        class="fa fa-tags"></i>Tags: <a
-                                        href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/tag/summer/"
-                                        rel="tag">summer</a></span></div>
+                                <!--                                <span class="author"><i class="fa fa-user"></i>By Hleb Poltanovich</span><br/>-->
+                                <!--                            <span class="comments"><i class="fa fa-comment"></i><a href="#comments"> 1-->
+                                <!--                                    Comment</a></span>-->
+                                <!--                                <span class="entry-categories"><i class="fa fa-tag"></i>Posted in <a-->
+                                <!--                                        href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/category/activities/"-->
+                                <!--                                        rel="category tag">Activities</a></span>-->
+                                <!--                                <span class="entry-tags"><i-->
+                                <!--                                        class="fa fa-tags"></i>Tags: <a-->
+                                <!--                                        href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/tag/summer/"-->
+                                <!--                                        rel="tag">summer</a></span>-->
+                            </div>
                             <div class="post-thumb">
                                 <a
                                     href="<?php echo url_for1('@news_detail?slug=' . $new->slug) ?>" rel="bookmark">
@@ -64,7 +71,7 @@ $n = count($listArticle);
             }
         } ?>
     </div>
-
+    <div class="clearfix"></div>
     <?php
     if ($n > 3) {
         for ($i = 3; $i < $n; $i++) {
@@ -73,10 +80,11 @@ $n = count($listArticle);
             ?>
             <article class="posts-archives-item" id="post-<?php echo $new->id ?>"
                      class="post-<?php echo $new->id ?> post type-post status-publish format-image has-post-thumbnail hentry category-activities tag-summer post_format-post-format-image">
-<!--                <h2 class="entry-title"><a-->
-<!--                        href="--><?php //echo url_for1('@news_detail?slug=' . $new->slug) ?><!--" rel="bookmark">-->
-<!--                        --><?php //echo htmlspecialchars($new->title) ?>
-<!--                    </a></h2>-->
+                <!--                <h2 class="entry-title"><a-->
+                <!--                        href="-->
+                <?php //echo url_for1('@news_detail?slug=' . $new->slug) ?><!--" rel="bookmark">-->
+                <!--                        --><?php //echo htmlspecialchars($new->title) ?>
+                <!--                    </a></h2>-->
 
 
                 <div class="<?php echo ($i % 2 == 0) ? 'post-content-item-right' : 'post-content-item-left' ?>">
@@ -89,37 +97,45 @@ $n = count($listArticle);
                     </div>
                     <div class="entry-content">
                         <div class="entry-content-p">
-                            <p> <?php echo htmlspecialchars($new->header) ?> </p>
+                            <p> <?php echo htmlspecialchars($new->title) ?> </p>
+                        </div>
+                        <div class="entry-meta">
+                    <span class="date"><i class="fa fa-calendar"></i><time datetime="2018-01-13T04:13:03+00:00">
+                            <?php echo VtHelper::getDateNew($new->created_at) ?>
+                        </time></span>
+                            <!--                    <span class="author"><i class="fa fa-user"></i>By Hleb Poltanovich</span>-->
+                            <!--                    <span class="comments"><i class="fa fa-comment"></i><a href="#comments"> 1 Comment</a></span>-->
+                            <!--                    <span-->
+                            <!--                        class="entry-categories"><i class="fa fa-tag"></i>Posted in <a-->
+                            <!--                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/category/activities/"-->
+                            <!--                            rel="category tag">Activities</a></span>-->
+                            <!--                    <span class="entry-tags"><i class="fa fa-tags"></i>Tags: <a-->
+                            <!--                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/tag/summer/"-->
+                            <!--                            rel="tag">summer</a></span>-->
                         </div>
 
                         <div class="excerpt-content">
                             <article>
-                                <p>This is what an ordinary post looks like, and you’re reading a custom excerpt right now. Have fun looking around the theme, and don’t forget to check it out on your phone!</p>
+                                <p>
+                                    <?php echo htmlspecialchars($new->header) ?>
+                                </p>
 
                                 <div class="more-link-wrapper">
-                                    <a class="more-link" href="<?php echo url_for1('@news_detail?slug=' . $new->slug) ?>">
+                                    <a class="more-link"
+                                       href="<?php echo url_for1('@news_detail?slug=' . $new->slug) ?>">
                                         Read the post
-                                        </a></div>
+                                    </a></div>
                             </article>
                         </div>
 
-<!--                        <div class="post-more"><a-->
-<!--                                href="--><?php //echo url_for1('@news_detail?slug=' . $new->slug) ?><!--"-->
-<!--                                class="btn btn-primary">Read more</a></div>-->
+                        <!--                        <div class="post-more"><a-->
+                        <!--                                href="-->
+                        <?php //echo url_for1('@news_detail?slug=' . $new->slug) ?><!--"-->
+                        <!--                                class="btn btn-primary">Read more</a></div>-->
                     </div>
                     <div class="clearfix"></div>
                 </div>
-                <div class="entry-meta">
-                    <span class="date"><i class="fa fa-calendar"></i><time datetime="2018-01-13T04:13:03+00:00">March
-                            14, 2014
-                        </time></span>
-                    <span class="author"><i class="fa fa-user"></i>By Hleb Poltanovich</span>
-                    <span class="comments"><i class="fa fa-comment"></i><a href="#comments"> 1 Comment</a></span><span
-                        class="entry-categories"><i class="fa fa-tag"></i>Posted in <a
-                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/category/activities/"
-                            rel="category tag">Activities</a></span><span class="entry-tags"><i class="fa fa-tags"></i>Tags: <a
-                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/tag/summer/"
-                            rel="tag">summer</a></span></div>
+
 
             </article>
             <?php
