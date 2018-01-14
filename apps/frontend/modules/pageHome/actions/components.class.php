@@ -11,6 +11,9 @@ class pageHomeComponents extends sfComponents
     public function executeSlide(sfWebRequest $request)
     {
         $this->slide = AdAdvertiseTable::getAdvertiseV2('homepage');
+        $limit = 3;
+        $type = 2;
+        $this->values = AdActivityTable::getAllValues($type, $limit);
     }
     public function executeTeacher(sfWebRequest $request)
     {
@@ -20,6 +23,19 @@ class pageHomeComponents extends sfComponents
     public function executeStudent(sfWebRequest $request)
     {
         $this->students = AdHocVienTable::getAllStudent();
+    }
+
+    public function executeValues(sfWebRequest $request)
+    {
+        $limit = 6;
+        $type = 1;
+        $this->values = AdActivityTable::getAllValues($type, $limit);
+    }
+    public function executeActivities(sfWebRequest $request)
+    {
+        $limit = 3;
+        $type = 2;
+        $this->values = AdActivityTable::getAllValues($type, $limit);
     }
 
     public function executeMaps(sfWebRequest $request)
