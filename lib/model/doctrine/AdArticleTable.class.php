@@ -76,8 +76,8 @@ class AdArticleTable extends Doctrine_Table
         return AdArticleTable::getInstance()->createQuery('a')
             ->where('a.is_active=?', VtCommonEnum::NUMBER_TWO)
             ->andWhere('a.published_time is null or a.published_time <= ?', date('Y-m-d H:i:s', time()))
-            ->andWhere('(a.expiredate_time is null or a.expiredate_time >= ?)', date('Y-m-d H:i:s', time()))
-            ->andWhere('a.lang=?', sfContext::getInstance()->getUser()->getCulture());
+            ->andWhere('(a.expiredate_time is null or a.expiredate_time >= ?)', date('Y-m-d H:i:s', time()));
+//            ->andWhere('a.lang=?', sfContext::getInstance()->getUser()->getCulture());
     }
 
     public static function getRandomArticle($attributes, $limit)
@@ -261,5 +261,19 @@ class AdArticleTable extends Doctrine_Table
             return $query;
         }
         return false;
+    }
+
+
+    public function getListNewSearch($q, $limit = 9, $page = 1)
+    {
+        $query = self::getActiveArticleQuery()
+            ->andWhere('LOWER(a.title) like LOWER(?) COLLATE utf8_bin', '%' . trim($q) . '%')
+            ->orderBy('updated_at desc, priority asc');
+
+        $pager = new sfDoctrinePager('AdArticle', $limit);
+        $pager->setQuery($query);
+        $pager->setPage($page);
+        $pager->init();
+        return $pager;
     }
 }

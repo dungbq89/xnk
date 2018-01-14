@@ -11,11 +11,12 @@
     <aside id="search-3" class="widget widget_search">
         <div class="searchbox">
             <form role="search" method="get" id="searchform"
-                  action="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/"><input type="text"
-                                                                                                placeholder="To search type and hit enter&hellip;"
-                                                                                                class="form-control"
-                                                                                                value=""
-                                                                                                name="s"></form>
+                  action="<?php echo url_for1('@article_search') ?>">
+                <input type="text" placeholder="To search type and hit enter&hellip;" class="form-control" value=""
+                       name="s">
+                <input type="hidden" name="type" value="<?php echo $type ?>">
+
+            </form>
         </div>
     </aside>
     <hr>

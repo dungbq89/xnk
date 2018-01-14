@@ -42,4 +42,19 @@ class AdYoutubeTable extends Doctrine_Table
         }
         return false;
     }
+
+
+    public function getListVideoYTSearch($q, $limit = 9, $page = 1)
+    {
+        $query = $this->createQuery()
+            ->where('is_active=?', VtCommonEnum::NUMBER_ONE)
+            ->andWhere('LOWER(name) like LOWER(?) COLLATE utf8_bin', '%' . trim($q) . '%')
+            ->orderBy('updated_at desc, priority asc');
+
+        $pager = new sfDoctrinePager('AdYoutube', $limit);
+        $pager->setQuery($query);
+        $pager->setPage($page);
+        $pager->init();
+        return $pager;
+    }
 }

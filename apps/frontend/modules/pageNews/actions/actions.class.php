@@ -60,7 +60,32 @@ class pageNewsActions extends sfActions
         } else {
             return $this->redirect404();
         }
+    }
 
+
+    public function executeSearchArticle(sfWebRequest $request)
+    {
+        $type = $this->type = trim($request->getParameter('type', 3));
+        $query = $this->query = trim($request->getParameter('s', ''));
+        $page = $this->page = trim($request->getParameter('page', 1));
+        $pager = false;
+        $limit = 9;
+        if ($query) {
+            switch ($type) {
+                case'1': {  // video
+                    $pager = AdYoutubeTable::getInstance()->getListVideoYTSearch($query, $limit, $page);
+                }
+                    break;
+                case'2': {  // tai lieu
+                    $pager = AdDocumentDownloadTable::getInstance()->getListDocumentDownloadSearch($query, $limit, $page);
+                }
+                    break;
+                default: {   // tin tuc
+                    $pager = AdArticleTable::getInstance()->getListNewSearch($query, $limit, $page);
+                }
+            }
+        }
+        $this->pager = $pager;
     }
 
 }

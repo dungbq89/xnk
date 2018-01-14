@@ -51,6 +51,9 @@ category_new:
 news_detail:
   url: /news-detail/:slug
   param: {module: pageNews, action: newDetail}
+article_search:
+  url: /tim-kiem
+  param: {module: pageNews, action: searchArticle}
 
 products:
   url: /chuyen-muc/:slug/:page

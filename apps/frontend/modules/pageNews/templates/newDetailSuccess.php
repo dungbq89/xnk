@@ -36,6 +36,6 @@
             </article>
         </div>
 
-        <?php include_component('pageNews', 'catNewNav') ?>
+        <?php include_component('pageNews', 'catNewNav', array('type'=>3)) ?>
     </div>
 </div>
