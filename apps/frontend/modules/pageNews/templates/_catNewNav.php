@@ -70,51 +70,37 @@
     <hr>
     <aside id="recent-posts-3" class="widget widget_recent_entries"><h5>CÁC BÀI VIẾT MỚI</h5>
         <ul>
-            <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/image-post/">Image
-                    Post</a>
-            </li>
-            <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/gallery-post/">Gallery
-                    Post</a>
-            </li>
-            <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/audio-post/">Audio
-                    Post</a>
-            </li>
-            <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/video-post/">Video
-                    Post</a>
-            </li>
-            <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/video-post-2/">Video
-                    Post</a>
-            </li>
+            <?php if (!empty($listNews)) {
+                foreach ($listNews as $new) {
+                    ?>
+                    <li>
+                        <p class="post-title">
+                            <a href="<?php echo url_for1('@news_detail?slug=' . $new['slug']) ?>">
+                                <?php echo htmlentities($new['title']) ?>
+                            </a>
+                        </p>
+                    </li>
+                    <?php
+                }
+            } ?>
         </ul>
     </aside>
     <hr>
     <aside id="recent-posts-3" class="widget widget_recent_entries"><h5>NHIỀU LƯỢT XEM NHẤT</h5>
         <ul>
-            <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/image-post/">Image
-                    Post</a>
-            </li>
-            <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/gallery-post/">Gallery
-                    Post</a>
-            </li>
-            <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/audio-post/">Audio
-                    Post</a>
-            </li>
-            <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/video-post/">Video
-                    Post</a>
-            </li>
-            <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/video-post-2/">Video
-                    Post</a>
-            </li>
+            <?php if (!empty($listViews)) {
+                foreach ($listViews as $new) {
+                    ?>
+                    <li>
+                        <p class="post-title">
+                            <a href="<?php echo url_for1('@news_detail?slug=' . $new['slug']) ?>">
+                                <?php echo htmlentities($new['title']) ?>
+                            </a>
+                        </p>
+                    </li>
+                    <?php
+                }
+            } ?>
         </ul>
     </aside>
     <hr>

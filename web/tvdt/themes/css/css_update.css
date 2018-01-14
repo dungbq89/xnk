@@ -153,7 +153,7 @@
     text-align: center;
 }
 
-#catNewContent .entry-content-p p, #catNewContent .entry-title p {
+#catNewContent .entry-content-p p, #catNewContent .entry-title p, #pageNewNav p.post-title {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -163,13 +163,13 @@
     text-align: left;
 }
 
-#pageVideo h2.entry-title{
+#pageVideo h2.entry-title {
     text-align: center;
 }
 
 /*nav trang new*/
 /*noi ve chung toi*/
-#pageNewNav figure blockquote{
+#pageNewNav figure blockquote {
     font-family: Roboto;
     font-size: 22px;
     font-weight: 400;

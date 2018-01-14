@@ -55,6 +55,7 @@ class pageNewsActions extends sfActions
         $article = AdArticleTable::getInstance()->createQuery()->andWhere('slug=?', $slug)->andWhere('lang=?', sfContext::getInstance()->getUser()->getCulture())
             ->andWhere('is_active=?', 2)->fetchArray();
         if (!empty($article)) {
+            AdArticleTable::getInstance()->updateHitCounter($article[0]['id']);
             $this->article = $article[0];
         } else {
             return $this->redirect404();
