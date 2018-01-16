@@ -89,6 +89,9 @@
         .single-events .tt_event_theme_page {
             margin-top: 140px !important;
         }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+            font-family: 'Times New Roman';
+        }
     </style>
 </head>
 <body class="home page-template-default page page-id-9 page-parent layout-wide">

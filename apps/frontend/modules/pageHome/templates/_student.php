@@ -1,7 +1,7 @@
 <section id="gallery" class="post-14 page type-page status-publish hentry">
     <div class="container">
         <hgroup class="page-title">
-            <h2 style="text-transform: uppercase;">Cảm nhận học viên</h2>
+<!--            <h2 style="text-transform: uppercase;">Cảm nhận học viên</h2>-->
             <h5>HAVE A LOOK</h5></hgroup>
         <ul id="gallery-1" class="gallery gallery-columns-4 gallery-size-gallery">
             <?php if(isset($students) && count($students)){

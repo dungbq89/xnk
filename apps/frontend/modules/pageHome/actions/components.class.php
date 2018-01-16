@@ -12,7 +12,7 @@ class pageHomeComponents extends sfComponents
     {
         $this->slide = AdAdvertiseTable::getAdvertiseV2('homepage');
         $limit = 3;
-        $type = 2;
+        $type = 1;
         $this->values = AdActivityTable::getAllValues($type, $limit);
     }
     public function executeTeacher(sfWebRequest $request)
@@ -33,7 +33,7 @@ class pageHomeComponents extends sfComponents
     }
     public function executeActivities(sfWebRequest $request)
     {
-        $limit = 3;
+        $limit = 6;
         $type = 2;
         $this->values = AdActivityTable::getAllValues($type, $limit);
     }

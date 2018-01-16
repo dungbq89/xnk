@@ -3,12 +3,11 @@
     <div class="superslides" data-width="#start" data-height="#start" data-pause="5000" data-animation="slow"
          data-effect="fade" style="height:220px !important;">
         <div class="slides-container"><img
-                src="tvdt/themes/magicreche/wordpress/wp-content/uploads/2014/03/banner1.jpg"
-                alt="#1"> <img
-                src="tvdt/themes/magicreche/wordpress/wp-content/uploads/2014/03/banner2.jpg"
-                alt="#2"> <img
-                src="tvdt/themes/magicreche/wordpress/wp-content/uploads/2014/03/banner3.jpg"
-                alt="#3"></div>
+                    <img
+                    src="tvdt/themes/magicreche/wordpress/wp-content/uploads/2014/03/banner2.jpg"
+                    alt="#2"> <img
+                    src="tvdt/themes/magicreche/wordpress/wp-content/uploads/2014/03/banner3.jpg"
+                    alt="#3"></div>
         <nav class="slides-navigation">
             <a href="#" class="next"><i class="fa fa-chevron-right default"></i></a>
             <a href="#" class="prev"><i class="fa fa-chevron-left default"></i></a>
@@ -18,18 +17,18 @@
     <div class="container">
         <div class="welcome" style="top: 25%">
             <div class="row">
-                <h1>Hoạt động</h1>
+                <h1>Giá trị</h1>
                 <p>We can do it, You can do it better</p>
-<!--                <p><i class="fa fa-angle-down default "></i></p>-->
+                <!--                <p><i class="fa fa-angle-down default "></i></p>-->
             </div>
         </div>
         <div class="stick-to-bottom" style="bottom: 40px;">
             <div class="container">
                 <div class="row">
                     <?php
-                    if(isset($values) && count($values)) {
+                    if (isset($values) && count($values)) {
                         foreach ($values as $key => $value) {
-                            switch ($key){
+                            switch ($key) {
                                 case 0:
                                     $color = '#E75D5D';
                                     break;
@@ -47,9 +46,10 @@
                             ?>
                             <div class="col-sm-4">
                                 <div class="teaser icon-box" style="color:#fff">
-                                    <div class="icon img-circle" style="background-image: url(<?php echo VtHelper::getThumbUrl($path, 150, 150, 'default') ?>);">
-<!--                                        <img src="--><?php //echo VtHelper::getPathImage($value['image'], sfConfig::get('app_article_images', 'category_images')) ?><!--">-->
-<!--                                        <img src="">-->
+                                    <div class="icon img-circle" style="background-color: #fff;">
+                                        <img width="70px" height="70px"
+                                             src="<?php echo VtHelper::getPathImage($value['image'], sfConfig::get('app_article_images', 'category_images')) ?>">
+                                        <!--                                        <img src="">-->
                                     </div>
                                     <div class="box" style="background-color:<?php echo $color; ?>">
                                         <h3><?php echo $value['name'] ?></h3>

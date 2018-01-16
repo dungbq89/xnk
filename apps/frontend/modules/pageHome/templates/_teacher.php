@@ -1,17 +1,21 @@
+<style>
+    .owl-carousel .owl-item{
+        display: inline-block !important;
+    }
+</style>
 <section id="meet-our-stuff" class="post-11 page type-page status-publish hentry">
     <div class="container">
         <hgroup class="page-title">
             <h2 style="text-transform: uppercase;">Huấn luyện viên</h2>
-            <h5>Tất cả chúng tôi ở đây để giúp bạn</h5></hgroup>
-        <p style="text-align: center;">Giới thiệu về giảng viên</p>
-
+<!--            <h5>Tất cả chúng tôi ở đây để giúp bạn</h5>-->
+        </hgroup>
         <p style="text-align: center;">
 
         <div class="gap" style="height:34px"></div>
         </p>
         <p style="text-align: center;">
 
-            <div class="owl-carousel staff-carousel" data-visible="4">
+            <div class="owl-carousel staff-carousel" data-visible="2">
             <?php
                 if(isset($teachers) && count($teachers)){
                     foreach ($teachers as $teacher){
