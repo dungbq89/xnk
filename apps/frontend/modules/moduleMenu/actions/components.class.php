@@ -64,8 +64,7 @@ class moduleMenuComponents extends sfComponents
         $this->listAlbum = AdAlbumTable::getAllAlbum()->fetchArray();
     }
     public function executeHeaderMobile(){
-        //lay ra danh sach album
-        $this->listAlbum = AdAlbumTable::getAllAlbum()->fetchArray();
+
     }
 
 }

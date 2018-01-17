@@ -24,8 +24,7 @@
     <meta property="og:image" name="og:image" content="" data-app>
     <link href="favicon.png" rel="shortcut icon"/>
     <meta http-equiv="REFRESH" content="5400"/>
-
-
+    <link rel='stylesheet' href='/css/style.css' type='text/css' media='all'/>
     <link rel='stylesheet' id='contact-form-7-css'
           href='/tvdt/themes/magicreche/wordpress/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.9.1'
           type='text/css' media='all'/>
@@ -78,10 +77,9 @@
         }</style>
 
     <style>
-        .navbar-nav > li > a {
-            line-height: 90px !important;
+        .navbar-large .site-logo{
+            max-height: 75px;
         }
-
         body {
             padding-top: 90px !important;
         }
@@ -95,7 +93,8 @@
     </style>
 </head>
 <body class="home page-template-default page page-id-9 page-parent layout-wide">
-<?php include_component('moduleMenu','header') ?>
+<?php include_component('moduleMenu','headerMobile') ?>
+<?php //include_component('moduleMenu','header') ?>
 
 <?php echo $sf_content;?>
 
