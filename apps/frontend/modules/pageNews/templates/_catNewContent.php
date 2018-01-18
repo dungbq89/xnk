@@ -10,71 +10,9 @@ $n = count($listArticle);
 
 <div class="col-sm-8" id="catNewContent">
 
-    <div class="block-line">
-        <?php if ($n > 0) {
-            for ($i = 0; $i < ($n > 3 ? 3 : $n); $i++) {
-                $new = $listArticle[$i];
-                $path = '/uploads/' . sfConfig::get('app_article_images') . $new->image_path;
-                ?>
-                <div>
-                    <div class="item blog-item">
-                        <article class="post">
-                            <h2 class="entry-title">
-                                <p>
-                                    <a
-                                        href="<?php echo url_for1('@news_detail?slug=' . $new->slug) ?>"
-                                        rel="bookmark"><?php echo htmlspecialchars($new->title) ?></a>
-                                </p>
-                            </h2>
-
-                            <div class="entry-meta">
-                            <span class="date"><i class="fa fa-calendar"></i><time datetime="2018-01-11T01:29:26+00:00">
-                                    <?php echo VtHelper::getDateNew($new->created_at) ?>
-                                </time></span><br/>
-                                <!--                                <span class="author"><i class="fa fa-user"></i>By Hleb Poltanovich</span><br/>-->
-                                <!--                            <span class="comments"><i class="fa fa-comment"></i><a href="#comments"> 1-->
-                                <!--                                    Comment</a></span>-->
-                                <!--                                <span class="entry-categories"><i class="fa fa-tag"></i>Posted in <a-->
-                                <!--                                        href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/category/activities/"-->
-                                <!--                                        rel="category tag">Activities</a></span>-->
-                                <!--                                <span class="entry-tags"><i-->
-                                <!--                                        class="fa fa-tags"></i>Tags: <a-->
-                                <!--                                        href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/tag/summer/"-->
-                                <!--                                        rel="tag">summer</a></span>-->
-                            </div>
-                            <div class="post-thumb">
-                                <a
-                                    href="<?php echo url_for1('@news_detail?slug=' . $new->slug) ?>" rel="bookmark">
-                                    <img width="750" height="422"
-                                         src="<?php echo VtHelper::getThumbUrl($path, 370, 200, 'image_370_200') ?>"
-                                         class="attachment-blog size-blog wp-post-image" alt=""/>
-                                </a>
-                            </div>
-                            <!--                            <div class="entry-content">-->
-                            <!--                                <div>-->
-                            <!--                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac-->
-                            <!--                                        turpis-->
-                            <!--                                        egestas. Mauris pretium neque imperdiet semper pellentesque. Proin bibendum,-->
-                            <!--                                        quam-->
-                            <!--                                        vel egestas ullamcorper, sapien orci eleifend nisl, placerat tincidunt quam nibh-->
-                            <!--                                        ut-->
-                            <!--                                        purus. Integer quam purus, scelerisque vitae aliquam sed, tincidunt eget libero.-->
-                            <!--                                        Morbi nunc enim, rhoncus ut rutrum vitae, dapibus at eros.</p></div>-->
-                            <!--                                <div class="post-more"><a-->
-                            <!--                                        href="<?php //echo url_for1('@news_detail?slug=' . $new->slug) ?>"-->
-                            <!--                                        class="btn btn-primary">Read more</a></div>-->
-                            <!--                            </div>-->
-                        </article>
-                    </div>
-                </div>
-                <?php
-            }
-        } ?>
-    </div>
     <div class="clearfix"></div>
     <?php
-    if ($n > 3) {
-        for ($i = 3; $i < $n; $i++) {
+        for ($i = 0; $i < $n; $i++) {
             $new = $listArticle[$i];
             $path = '/uploads/' . sfConfig::get('app_article_images') . $new->image_path;
             ?>
@@ -140,7 +78,6 @@ $n = count($listArticle);
             </article>
             <?php
         }
-    }
     ?>
 
     <div style="clear: both">

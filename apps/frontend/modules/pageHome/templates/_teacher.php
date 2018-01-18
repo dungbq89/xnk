@@ -23,14 +23,14 @@
                         ?>
                         <div>
                             <div class="item staff-item">
-                                <img width="150" height="150" style="border-radius: 50%;"
-                                      src="<?php echo VtHelper::getThumbUrl($path, 150, 250, 'default') ?>"
+                                <img width="175" height="175" style="border-radius: 50%;"
+                                      src="<?php echo VtHelper::getThumbUrl($path, 175, 175, 'default') ?>"
                                       class="attachment-staff size-staff wp-post-image" alt=""
                                       sizes="(max-width: 150px) 100vw, 150px">
 
                                 <h4><?php echo $teacher['name'] ?></h4>
 
-                            <p style="padding: 0px 5px;"><?php echo $teacher['description']; ?></p>
+                            <p style="padding: 0px 20px;"><?php echo $teacher['description']; ?></p>
                             </div>
                         </div>
                         <?php

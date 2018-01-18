@@ -10,3 +10,6 @@ teacher:
 slide:
   enabled: true
   lifetime: 600
+activities:
+  enabled: true
+  lifetime: 600

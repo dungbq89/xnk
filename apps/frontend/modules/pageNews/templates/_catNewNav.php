@@ -20,45 +20,6 @@
         </div>
     </aside>
     <hr>
-    <aside id="recent-posts-3" class="widget widget_recent_entries"><h5>NÓI VỀ CHÚNG TÔI</h5>
-        <ul>
-            <li>
-                <div class="sqs-block-content">
-                    <figure>
-                        <blockquote>
-                            <span>“</span>Phương pháp huấn luyện của cô Lan Bercu thực tế và hữu ích. Tôi sẽ về ứng dụng
-                            ngay cho team của mình.<span>”</span>
-                        </blockquote>
-                        <figcaption class="source">— - Nguyễn Lâm Nguyệt Kiều, Giám Đốc Marketing MASAN</figcaption>
-                    </figure>
-                </div>
-            </li>
-            <li>
-                <div class="sqs-block-content">
-                    <figure>
-                        <blockquote>
-                            <span>“</span>Phương pháp huấn luyện của cô Lan Bercu thực tế và hữu ích. Tôi sẽ về ứng dụng
-                            ngay cho team của mình.<span>”</span>
-                        </blockquote>
-                        <figcaption class="source">— - Nguyễn Lâm Nguyệt Kiều, Giám Đốc Marketing MASAN</figcaption>
-                    </figure>
-                </div>
-            </li>
-            <li>
-                <div class="sqs-block-content">
-                    <figure>
-                        <blockquote>
-                            <span>“</span>Phương pháp huấn luyện của cô Lan Bercu thực tế và hữu ích. Tôi sẽ về ứng dụng
-                            ngay cho team của mình.<span>”</span>
-                        </blockquote>
-                        <figcaption class="source">— - Nguyễn Lâm Nguyệt Kiều, Giám Đốc Marketing MASAN</figcaption>
-                    </figure>
-                </div>
-            </li>
-
-        </ul>
-    </aside>
-    <hr>
     <aside id="recent-posts-3" class="widget widget_recent_entries"><h5>Quảng cáo</h5>
         <ul>
             <li>

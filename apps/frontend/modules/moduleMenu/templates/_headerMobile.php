@@ -8,9 +8,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="<?php echo url_for('@homepage') ?>" rel="home">
-                <img width="48" height="48"
-                     src="/images/xnk.png"
-                     class="site-logo"/> <span class="site-title-text"></span></a>
+                <img width="90" height="90" src="/images/xnk.png" class="site-logo"/> <span class="site-title-text"></span></a>
         </div>
         <nav id="site-navigation" class="menu-container navbar-collapse collapse" role="navigation" itemscope
              itemtype="http://schema.org/SiteNavigationElement"><h2 class="screen-reader-text sr-only"
@@ -31,6 +29,15 @@
                     role="navigation" itemscope itemtype="" itemprop="name">
                     <a title target rel href="<?php echo url_for1('@category_new?slug=tu-hoc') ?>" itemprop="url"><span
                                 class="glyphicon glyphicon-home" role="navigation" itemscope ></span>Tự học<br/><span
+                                class="menu-item-description" role="navigation" itemscope
+                                itemtype="http://schema.org/SiteNavigationElement">Tôi cần đọc</span></a>
+                </li>
+
+                <li id="menu-item-1606"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1715 menu-item-has-icon menu-item-has-description"
+                    role="navigation" itemscope itemtype="" itemprop="name">
+                    <a title target rel href="<?php echo url_for1('@category_new?slug=tu-hoc') ?>" itemprop="url"><span
+                                class="glyphicon glyphicon-home" role="navigation" itemscope ></span>Khóa huấn luyện<br/><span
                                 class="menu-item-description" role="navigation" itemscope
                                 itemtype="http://schema.org/SiteNavigationElement">Tôi được huấn luyện</span></a>
                 </li>
@@ -60,6 +67,15 @@
                                 class="glyphicon glyphicon-home" role="navigation" itemscope ></span>Kho tài liệu<br/><span
                                 class="menu-item-description" role="navigation" itemscope
                                 itemtype="http://schema.org/SiteNavigationElement">Tôi cần lưu trữ</span></a>
+                </li>
+
+                <li id="menu-item-1701"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1715 menu-item-has-icon menu-item-has-description"
+                    role="navigation" itemscope itemtype="" itemprop="name">
+                    <a title target rel href="<?php echo url_for1('@listDocument') ?>" itemprop="url"><span
+                                class="glyphicon glyphicon-home" role="navigation" itemscope ></span>Cảm nhận học viên<br/><span
+                                class="menu-item-description" role="navigation" itemscope
+                                itemtype="http://schema.org/SiteNavigationElement">Cảm nhận của tôi</span></a>
                 </li>
 
             </ul>

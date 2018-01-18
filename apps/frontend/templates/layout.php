@@ -106,15 +106,6 @@
       href='/tvdt/themes/magicreche/wordpress/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=4.9.1'
       type='text/css' media='all'/>
 <link rel='stylesheet' href='/tvdt/themes/css/css_update.css' type='text/css' media='all'/>
-<script type='text/javascript'>
-    /* <![CDATA[ */
-    var wpcf7 = {
-        "apiSettings": {
-            "root": "http:\/\/www.coffeecreamthemes.com\/themes\/magicreche\/wordpress\/wp-json\/contact-form-7\/v1",
-            "namespace": "contact-form-7\/v1"
-        }, "recaptcha": {"messages": {"empty": "Please verify that you are not a robot."}}
-    };
-    /* ]]> */
 </script>
 <script type='text/javascript'
         src='/tvdt/themes/magicreche/wordpress/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.9.1'></script>
@@ -161,4 +152,12 @@
 <script type='text/javascript'
         src='/tvdt/themes/magicreche/wordpress/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=4.9.1'></script>
 </body>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#activity-xnk').owlCarousel({
+            autoPlay:true
+        });
+
+    });
+</script>
 </html>
