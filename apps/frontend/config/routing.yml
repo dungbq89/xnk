@@ -84,7 +84,7 @@ videoDetail:
   param: {module: pageVideo, action: videoDetail}
 #trang gioi thieu
 introduction:
-  url: /gioi-thieu/:slug
+  url: /khoa-huan-luyen
   param: {module: pageIntroduction, action: index}
 #trang tim kiem tin tuc
 page_search:

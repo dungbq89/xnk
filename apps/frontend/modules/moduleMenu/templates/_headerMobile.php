@@ -36,7 +36,7 @@
                 <li id="menu-item-1606"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1715 menu-item-has-icon menu-item-has-description"
                     role="navigation" itemscope itemtype="" itemprop="name">
-                    <a title target rel href="<?php echo url_for1('@category_new?slug=tu-hoc') ?>" itemprop="url"><span
+                    <a title target rel href="<?php echo url_for1('@introduction') ?>" itemprop="url"><span
                                 class="glyphicon glyphicon-home" role="navigation" itemscope ></span>Khóa huấn luyện<br/><span
                                 class="menu-item-description" role="navigation" itemscope
                                 itemtype="http://schema.org/SiteNavigationElement">Tôi được huấn luyện</span></a>

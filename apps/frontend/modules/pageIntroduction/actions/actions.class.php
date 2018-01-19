@@ -12,20 +12,12 @@ class pageIntroductionActions extends sfActions
 {
     public function executeIndex(sfWebRequest $request)
     {
-        $slug = $request->getParameter('slug');
-        if($slug){
-            $html = AdHtmlTable::getHtmlByHtml($slug);
-            if($html){
-                $this->html = $html;
-            }
-            else{
-                return $this->redirect404();
-            }
-        }
-        else{
+        $id = 55;
+        $html = AdHtmlTable::getHtmlById($id);
+        if ($html) {
+            $this->html = $html;
+        } else {
             return $this->redirect404();
         }
-
     }
-
 }
