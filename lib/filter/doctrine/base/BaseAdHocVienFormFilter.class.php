@@ -15,6 +15,7 @@ abstract class BaseAdHocVienFormFilter extends BaseFormFilterDoctrine
     $this->setWidgets(array(
       'name'        => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'description' => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'body'        => new sfWidgetFormFilterInput(),
       'image'       => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'priority'    => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'is_active'   => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
@@ -25,6 +26,7 @@ abstract class BaseAdHocVienFormFilter extends BaseFormFilterDoctrine
     $this->setValidators(array(
       'name'        => new sfValidatorPass(array('required' => false)),
       'description' => new sfValidatorPass(array('required' => false)),
+      'body'        => new sfValidatorPass(array('required' => false)),
       'image'       => new sfValidatorPass(array('required' => false)),
       'priority'    => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
       'is_active'   => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
@@ -52,6 +54,7 @@ abstract class BaseAdHocVienFormFilter extends BaseFormFilterDoctrine
       'id'          => 'Number',
       'name'        => 'Text',
       'description' => 'Text',
+      'body'        => 'Text',
       'image'       => 'Text',
       'priority'    => 'Number',
       'is_active'   => 'Boolean',

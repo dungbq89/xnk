@@ -9,17 +9,20 @@ Doctrine_Manager::getInstance()->bindComponent('AdGiangVien', 'doctrine');
  * 
  * @property string $name
  * @property string $description
+ * @property clob $body
  * @property string $image
  * @property integer $priority
  * @property boolean $is_active
  * 
  * @method string      getName()        Returns the current record's "name" value
  * @method string      getDescription() Returns the current record's "description" value
+ * @method clob        getBody()        Returns the current record's "body" value
  * @method string      getImage()       Returns the current record's "image" value
  * @method integer     getPriority()    Returns the current record's "priority" value
  * @method boolean     getIsActive()    Returns the current record's "is_active" value
  * @method AdGiangVien setName()        Sets the current record's "name" value
  * @method AdGiangVien setDescription() Sets the current record's "description" value
+ * @method AdGiangVien setBody()        Sets the current record's "body" value
  * @method AdGiangVien setImage()       Sets the current record's "image" value
  * @method AdGiangVien setPriority()    Sets the current record's "priority" value
  * @method AdGiangVien setIsActive()    Sets the current record's "is_active" value
@@ -45,6 +48,10 @@ abstract class BaseAdGiangVien extends sfDoctrineRecord
              'notnull' => true,
              'comment' => 'mô tả',
              'length' => 1000,
+             ));
+        $this->hasColumn('body', 'clob', null, array(
+             'type' => 'clob',
+             'comment' => 'Nội dung bài viết trên web',
              ));
         $this->hasColumn('image', 'string', 255, array(
              'type' => 'string',

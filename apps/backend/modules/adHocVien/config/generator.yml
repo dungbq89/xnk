@@ -19,6 +19,7 @@ generator:
         image: {label: "Ảnh đại diện"}
         priority: {label: "Thứ tự ưu tiên"}
         is_active: {label: "Trạng thái"}
+        body: {label: "Nội dung"}
       list:
         display: [image, name, priority, is_active]
         title: Danh sách học viên
@@ -28,7 +29,7 @@ generator:
       filter:
         display: [name]
       form:
-        display: [name, image, description, priority, is_active]
+        display: [name, image, description, body, priority, is_active]
         class: adHocVienFormAdmin
       edit:
         title: Chỉnh sửa học viên

@@ -25,7 +25,7 @@ $n = count($listDocument);
 
                                     <div class="post-thumb">
                                         <div class="post-thumb-img">
-                                            <a href="<?php echo $pathDoc ?>">
+                                            <a href="<?php echo $pathDoc ?>" target="_blank">
                                                 <img width="750" height="422"
                                                      src="<?php echo VtHelper::getThumbUrl($path, 321, 184, 'video_default'); ?>"
                                                      class="attachment-blog size-blog wp-post-image post-thumb-image"
@@ -35,7 +35,7 @@ $n = count($listDocument);
                                         <div class="post-thumb-overlay">
                                             <div class="text">
                                                 <div class="post-more"><a
-                                                        href="<?php echo $pathDoc ?>"
+                                                        href="<?php echo $pathDoc ?>" target="_blank"
                                                         class="btn btn-primary">Download</a></div>
 
                                             </div>

@@ -77,6 +77,15 @@
         }</style>
 
     <style>
+        body{
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+
         .navbar-large .site-logo{
             max-height: 75px;
         }
@@ -151,11 +160,14 @@
         src='/tvdt/themes/magicreche/wordpress/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=4.9.1'></script>
 <script type='text/javascript'
         src='/tvdt/themes/magicreche/wordpress/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=4.9.1'></script>
+<script type='text/javascript'
+        src='/owl-carousel/owl.carousel.js'></script>
 </body>
 <script type="text/javascript">
     $(document).ready(function() {
         $('#activity-xnk').owlCarousel({
-            autoPlay:true
+            autoPlay:true,
+            loop:true,
         });
 
     });

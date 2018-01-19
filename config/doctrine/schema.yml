@@ -511,6 +511,7 @@ AdHocVien:
   columns:
     name: { type: string(255), notnull: true,  comment: "Tên học viên"}
     description: { type: string(1000), notnull: true,  comment: "mô tả"}
+    body: { type: clob, comment: "Nội dung bài viết trên web" }
     image: { type: string(255), notnull: true,  comment: "ảnh đại diện"}
     priority: { type: integer(5), notnull: true, comment: "Độ ưu tiên hiển thị" }
     is_active: { type: boolean, notnull: false, default: false, comment: "Trạng thái"}
@@ -522,6 +523,7 @@ AdGiangVien:
   columns:
     name: { type: string(255), notnull: true,  comment: "Tên giảng viên"}
     description: { type: string(1000), notnull: true,  comment: "mô tả"}
+    body: { type: clob, comment: "Nội dung bài viết trên web" }
     image: { type: string(255), notnull: true,  comment: "ảnh đại diện"}
     priority: { type: integer(5), notnull: true, comment: "Độ ưu tiên hiển thị" }
     is_active: { type: boolean, notnull: false, default: false, comment: "Trạng thái"}

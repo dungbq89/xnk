@@ -21,6 +21,18 @@ class adHocVienFormAdmin extends BaseAdHocVienForm
         $this->widgetSchema['description'] =   new sfWidgetFormTextarea();
         $this->validatorSchema['description'] = new sfValidatorString(array('required' => false, 'trim'=>true, 'max_length' => 2000));
 
+        $this->widgetSchema['body'] = new sfWidgetFormCKEditor(
+            array(
+                'jsoptions' => array('toolbar' => 'Full',
+                    'width' => '700',
+                    'height' => '200'),
+            ));
+        $this->validatorSchema['body'] = new sfValidatorString(
+            array(
+                'required' => false,
+                'trim' => true,
+            ));
+
         $this->widgetSchema['image'] = new sfWidgetFormInputFileEditable(array(
             'label' => ' ',
             'file_src' => VtHelper::getUrlImagePathThumb(sfConfig::get('app_article_images'), $this->getObject()->getImage()),
