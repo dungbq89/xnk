@@ -13,20 +13,13 @@
                 <h2 class="entry-title"><?php echo $article['header'] ?></h2>
 
                 <div class="entry-meta">
-                    <span class="date"><i class="fa fa-calendar"></i><time datetime="2018-01-13T17:08:58+00:00">March
-                            13, 2014
+                    <span class="date"><i class="fa fa-calendar"></i><time datetime="2018-01-13T17:08:58+00:00">
+                            <?php echo VtHelper::getDateNew($article['created_at']) ?>
                         </time></span>
-<!--                    <span class="author"><i class="fa fa-user"></i>By Hleb Poltanovich</span>-->
-<!--                    <span class="comments"><i class="fa fa-comment"></i><a href="#comments"> No Comments</a></span>-->
-<!--                    <span-->
-<!--                        class="entry-categories"><i class="fa fa-tag"></i>Posted in <a-->
-<!--                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/category/kids/"-->
-<!--                            rel="category tag">Kids</a>, <a-->
-<!--                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/category/toys/"-->
-<!--                            rel="category tag">Toys</a></span>-->
-<!--                    <span class="entry-tags"><i-->
-<!--                            class="fa fa-tags"></i>Tags: <a-->
-<!--                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/tag/spring/" rel="tag">spring</a></span>-->
+
+                    <div class="fb-like" data-href="<?php echo sfConfig::get('app_site_host') . url_for1('@news_detail?slug=' . $article['slug']) ?>" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+
+
                 </div>
 
                 <div class="entry-content">
@@ -34,9 +27,16 @@
                         <?php echo $article['body'] ?>
                     </div>
                 </div>
+                <div class="entry-content">
+                    <div class="fb-comments"
+                         data-href="<?php echo 'http://nehobcity.xyz' . url_for1('@news_detail?slug=' . $article['slug']) ?>"
+                         data-colorscheme="light"
+                         data-numposts="5" data-width="500"></div>
+                </div>
+
             </article>
         </div>
 
-        <?php include_component('pageNews', 'catNewNav', array('type'=>3)) ?>
+        <?php include_component('pageNews', 'catNewNav', array('type' => 3)) ?>
     </div>
 </div>
