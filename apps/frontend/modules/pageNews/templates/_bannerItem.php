@@ -11,8 +11,10 @@ if (!empty($adVertises)) {
         $path = '/uploads/' . sfConfig::get('app_advertise_images') . $adv['file_path'];
         ?>
         <div class="item">
-            <img
-                src="<?php echo VtHelper::getThumbUrl($path, 321, 184, 'image_default'); ?>">
+            <a href="<?php echo $adv['link'] ?>" data-img="<?php echo $path ?>">
+                <img
+                    src="<?php echo VtHelper::getThumbUrl($path, 321, 184, 'image_default'); ?>">
+            </a>
         </div>
         <?php
     }
