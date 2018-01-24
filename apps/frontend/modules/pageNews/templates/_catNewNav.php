@@ -23,9 +23,33 @@
     <aside id="recent-posts-3" class="widget widget_recent_entries"><h5>Quảng cáo</h5>
         <ul>
             <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/image-post/">
-                    <img src="http://nehobcity.xyz/cache/uploads/article/8f/2e/e8/5a5b6d1b86256_321_184.jpg">
-                </a>
+                <?php if (count($adVertises > 1)) {
+                    ?>
+                    <div class="slide-advertise">
+                        <?php
+                        foreach ($adVertises as $adv) {
+                            $path = '/uploads/' . sfConfig::get('app_advertise_images') . $adv['file_path'];
+                            ?>
+                            <div class="item">
+                                <a href="<?php echo $adv['link'] ?>"
+                                   data-img="<?php echo $path ?>">
+                                    <img src="<?php echo VtHelper::getThumbUrl($path, 321, 184, 'image_default'); ?>">
+                                </a>
+                            </div>
+                            <?php
+                        }
+                        ?>
+                    </div>
+                    <?php
+                } else {
+                    $adv = $adVertises[0];
+                    $path = '/uploads/' . sfConfig::get('app_advertise_images') . $adv['file_path'];
+                    ?>
+                    <a href="<?php echo $adv['link'] ?>" data-img="<?php echo $path ?>">
+                        <img src="<?php echo VtHelper::getThumbUrl($path, 321, 184, 'image_default'); ?>">
+                    </a>
+                    <?php
+                } ?>
             </li>
         </ul>
     </aside>
@@ -66,30 +90,26 @@
         </ul>
     </aside>
     <hr>
-    <aside id="recent-posts-3" class="widget widget_recent_entries"><h5>CÁC WEBSITE LIÊN KẾT</h5>
-        <ul>
-            <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/image-post/">Image
-                    Post</a>
-            </li>
-            <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/gallery-post/">Gallery
-                    Post</a>
-            </li>
-            <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/audio-post/">Audio
-                    Post</a>
-            </li>
-            <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/video-post/">Video
-                    Post</a>
-            </li>
-            <li>
-                <a href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/video-post-2/">Video
-                    Post</a>
-            </li>
-        </ul>
-    </aside>
-    <hr>
+    <?php if (!empty($linls)) {
+
+        ?>
+        <aside id="recent-posts-3" class="widget widget_recent_entries"><h5>CÁC WEBSITE LIÊN KẾT</h5>
+            <ul>
+                <?php
+                foreach ($linls as $link) {
+                    ?>
+                    <li>
+                        <a href="<?php echo $link['link'] ?>"
+                           target="_blank"><?php echo htmlspecialchars($link['name']) ?></a>
+                    </li>
+                    <?php
+                }
+                ?>
+            </ul>
+        </aside>
+        <hr>
+        <?php
+    } ?>
+
 
 </div>

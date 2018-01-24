@@ -26,11 +26,11 @@ generator:
           _edit: {label: Chi tiết}
           _delete: ~
       filter:
-        display: [name, type]
+        display: [name]
         class: adLinkFiltersAdmin
       form:
         class: adLinkAdminForm
-        display: [name, link, type, priority,is_active]
+        display: [name, link, priority,is_active]
       edit:
         title: Chỉnh sửa liên kết
       new:

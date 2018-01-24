@@ -4,7 +4,7 @@
 
 <?php
 
-if ($pager) {
+if ($pager && $pager->getNbResults()>0) {
     $listVideo = $pager->getResults();
     $n = count($listVideo);
     ?>

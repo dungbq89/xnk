@@ -12,72 +12,81 @@ $n = count($listArticle);
 
     <div class="clearfix"></div>
     <?php
-        for ($i = 0; $i < $n; $i++) {
-            $new = $listArticle[$i];
-            $path = '/uploads/' . sfConfig::get('app_article_images') . $new->image_path;
-            ?>
-            <article class="posts-archives-item" id="post-<?php echo $new->id ?>"
-                     class="post-<?php echo $new->id ?> post type-post status-publish format-image has-post-thumbnail hentry category-activities tag-summer post_format-post-format-image">
-                <!--                <h2 class="entry-title"><a-->
-                <!--                        href="-->
-                <?php //echo url_for1('@news_detail?slug=' . $new->slug) ?><!--" rel="bookmark">-->
-                <!--                        --><?php //echo htmlspecialchars($new->title) ?>
-                <!--                    </a></h2>-->
+    for ($i = 0; $i < $n; $i++) {
+        $new = $listArticle[$i];
+        $path = '/uploads/' . sfConfig::get('app_article_images') . $new->image_path;
+        ?>
+        <article class="posts-archives-item" id="post-<?php echo $new->id ?>"
+                 class="post-<?php echo $new->id ?> post type-post status-publish format-image has-post-thumbnail hentry category-activities tag-summer post_format-post-format-image">
 
 
-                <div class="<?php echo ($i % 2 == 0) ? 'post-content-item-right' : 'post-content-item-left' ?>">
-                    <div class="post-thumb">
-                        <a
-                            href="<?php echo url_for1('@news_detail?slug=' . $new->slug) ?>" rel="bookmark">
-                            <img
-                                src="<?php echo VtHelper::getThumbUrl($path, 370, 200, 'image_370_200') ?>"
-                                class="attachment-blog size-blog wp-post-image" alt=""/></a>
+            <div class="<?php echo ($i % 2 == 0) ? 'post-content-item-right' : 'post-content-item-left' ?>">
+                <div class="post-thumb">
+                    <a
+                        href="<?php echo url_for1('@news_detail?slug=' . $new->slug) ?>" rel="bookmark">
+                        <img
+                            src="<?php echo VtHelper::getThumbUrl($path, 370, 200, 'image_370_200') ?>"
+                            class="attachment-blog size-blog wp-post-image" alt=""/></a>
+                </div>
+                <div class="entry-content">
+                    <div class="entry-content-p">
+
+                        <p>
+                            <a
+                                href="<?php echo url_for1('@news_detail?slug=' . $new->slug) ?>" rel="bookmark">
+                                <?php echo htmlspecialchars($new->title) ?>
+                            </a>
+                        </p>
                     </div>
-                    <div class="entry-content">
-                        <div class="entry-content-p">
-                            <p> <?php echo htmlspecialchars($new->title) ?> </p>
-                        </div>
-                        <div class="entry-meta">
+                    <div class="entry-meta">
                     <span class="date"><i class="fa fa-calendar"></i><time datetime="2018-01-13T04:13:03+00:00">
                             <?php echo VtHelper::getDateNew($new->created_at) ?>
                         </time></span>
-                            <!--                    <span class="author"><i class="fa fa-user"></i>By Hleb Poltanovich</span>-->
-                            <!--                    <span class="comments"><i class="fa fa-comment"></i><a href="#comments"> 1 Comment</a></span>-->
-                            <!--                    <span-->
-                            <!--                        class="entry-categories"><i class="fa fa-tag"></i>Posted in <a-->
-                            <!--                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/category/activities/"-->
-                            <!--                            rel="category tag">Activities</a></span>-->
-                            <!--                    <span class="entry-tags"><i class="fa fa-tags"></i>Tags: <a-->
-                            <!--                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/tag/summer/"-->
-                            <!--                            rel="tag">summer</a></span>-->
-                        </div>
 
-                        <div class="excerpt-content">
-                            <article>
-                                <p>
-                                    <?php echo htmlspecialchars($new->header) ?>
-                                </p>
+                        <span class="author"><i
+                                class="fa fa-eye"></i><?php echo isset($new->hit_count) ? $new->hit_count : '0' ?></span>
 
-                                <div class="more-link-wrapper">
-                                    <a class="more-link"
-                                       href="<?php echo url_for1('@news_detail?slug=' . $new->slug) ?>">
-                                        Read the post
-                                    </a></div>
-                            </article>
-                        </div>
+                        <div class="fb-like"
+                             data-href="<?php echo sfConfig::get('app_site_host') . url_for1('@news_detail?slug=' . $new->slug) ?>"
+                             data-layout="button_count" data-action="like" data-size="small" data-show-faces="false"
+                             data-share="true"></div>
 
-                        <!--                        <div class="post-more"><a-->
-                        <!--                                href="-->
-                        <?php //echo url_for1('@news_detail?slug=' . $new->slug) ?><!--"-->
-                        <!--                                class="btn btn-primary">Read more</a></div>-->
+                        <!--                    <span class="comments"><i class="fa fa-comment"></i><a href="#comments"> 1 Comment</a></span>-->
+                        <!--                    <span-->
+                        <!--                        class="entry-categories"><i class="fa fa-tag"></i>Posted in <a-->
+                        <!--                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/category/activities/"-->
+                        <!--                            rel="category tag">Activities</a></span>-->
+                        <!--                    <span class="entry-tags"><i class="fa fa-tags"></i>Tags: <a-->
+                        <!--                            href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/tag/summer/"-->
+                        <!--                            rel="tag">summer</a></span>-->
                     </div>
-                    <div class="clearfix"></div>
+
+                    <div class="excerpt-content">
+                        <article>
+                            <p>
+                                <?php echo htmlspecialchars($new->header) ?>
+                            </p>
+
+                            <div class="more-link-wrapper">
+                                <a class="more-link"
+                                   href="<?php echo url_for1('@news_detail?slug=' . $new->slug) ?>">
+                                    Xem thêm
+                                </a></div>
+                        </article>
+                    </div>
+
+                    <!--                        <div class="post-more"><a-->
+                    <!--                                href="-->
+                    <?php //echo url_for1('@news_detail?slug=' . $new->slug) ?><!--"-->
+                    <!--                                class="btn btn-primary">Read more</a></div>-->
                 </div>
+                <div class="clearfix"></div>
+            </div>
 
 
-            </article>
-            <?php
-        }
+        </article>
+        <?php
+    }
     ?>
 
     <div style="clear: both">

@@ -17,6 +17,9 @@
                             <?php echo VtHelper::getDateNew($article['created_at']) ?>
                         </time></span>
 
+                        <span class="author"><i
+                                class="fa fa-eye"></i><?php echo isset($article['hit_count']) ? $article['hit_count'] : '0' ?></span>
+
                     <div class="fb-like" data-href="<?php echo sfConfig::get('app_site_host') . url_for1('@news_detail?slug=' . $article['slug']) ?>" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
 
 

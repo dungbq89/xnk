@@ -1,7 +1,6 @@
   protected function processForm(sfWebRequest $request, sfForm $form)
   {
     $values=$request->getParameter($form->getName());
-    $values['lang']= sfContext::getInstance()->getUser()->getCulture();
     $form->bind($values, $request->getFiles($form->getName()));
     if ($form->isValid())
     {

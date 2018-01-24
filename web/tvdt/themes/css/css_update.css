@@ -72,7 +72,7 @@ body {
 }
 
 .post-content-item-right .entry-content .entry-content-p, .post-content-item-left .entry-content .entry-content-p {
-    font-size: 1.875em;
+    font-size: 14px;
     line-height: 1.6;
     letter-spacing: 0.04em;
     font-weight: 700;

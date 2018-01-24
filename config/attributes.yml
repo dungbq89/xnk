@@ -1,8 +1,12 @@
 advertise_template:
   topone: {value: topone, alias: "Quảng cáo Slide"}
   special: {value: special, alias: "Quảng  cáo sản phẩm hot"}
+  image: {value: image, alias: "Ảnh quảng cáo"}
 view_page:
   homepage: {value: homepage, alias: "Trang chủ"}
   introduction: {value: introduction, alias: "Khóa huấn luyện"}
+  news_detail: {value: news_detail, alias: "Trang chi tiết tin tức"}
+  category_new: {value: category_new, alias: "Trang danh sách tin tức"}
+  videoDetail: {value: videoDetail, alias: "Trang chi tiết video"}
 promotion_attributes:
   new: {value: 1, alias: "Tin mới"}

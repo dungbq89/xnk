@@ -84,6 +84,7 @@
             -ms-user-select: none;
             -o-user-select: none;
             user-select: none;
+            font-family: Arial;
         }
 
         .navbar-large .site-logo{
@@ -180,6 +181,10 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
+
+
+<?php include_component('common','facebookChat') ?>
+
 </body>
 <script type="text/javascript">
     $(document).ready(function() {
@@ -188,6 +193,11 @@
             loop:true,
         });
 
+        $(".slide-advertise").owlCarousel({
+            autoPlay:true,
+            loop:true,
+            items:1,
+        });
     });
 </script>
 </html>

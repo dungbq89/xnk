@@ -35,7 +35,7 @@ if ($n > 0) {
                         <!--                                        href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/tag/summer/"-->
                         <!--                                        rel="tag">summer</a></span>-->
                     </div>
-                    <div class="post-thumb">
+                    <div class="post-thumb" data-img="<?php echo $path ?>">
                         <a href="<?php echo url_for1('@news_detail?slug=' . $video->slug) ?>">
                             <img width="750" height="422"
                                  src="<?php echo VtHelper::getThumbUrl($path, 321, 184, 'video_default'); ?>"
