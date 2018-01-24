@@ -1,28 +1,6 @@
-.navbar-offset {
-    margin-top: 50px;
-}
-@media (min-width: 768px)  {
-    .navbar-offset {
-        margin-top: 60px;
-    }
-}
-@media (min-width: 992px)  {
-    .navbar-large-offset {
-        margin-top: 80px;
-    }
-}
-.site {
-    max-width: 100%;
-    overflow-x: hidden;
-    background: #fff;
-}
-@media (min-width: 768px)  {
-    .site {
-        background: none;
-    }
-}
-.design-full-screen .site {
-    background: #fff;
+@charset "utf-8";
+.nav-tabs {
+    margin-bottom: 15px;
 }
 .navbar {
     padding: 0;
@@ -409,4 +387,63 @@
 }
 .sidebar-navbar .widget {
     padding: 0;
+}
+
+.subnav {
+    margin: 80px 0;
+}
+.subnav-fixed {
+    position: fixed;
+    top: 60px;
+    z-index: 1;
+    width: 100%;
+    margin: 0!important;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .04);
+}
+.designfull-screen .subnav {
+    margin: 80px 0 -40px;
+}
+.subnav .nav-pills {
+    display: table;
+    width: 100%;
+    margin: 0;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    font-weight: normal;
+    overflow: hidden;
+}
+.subnav-fixed .nav-pills {
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 0;
+}
+.subnav .nav-pills>li {
+    display: table-cell;
+    float: none;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #f3f3f3;
+    text-align: center;
+}
+.subnav .nav-pills>li:first-child {
+    border-left: none;
+}
+.subnav .nav-pills>li:last-child {
+    border-right: none;
+}
+.subnav .nav-pills>li>a {
+    padding: 11px 18px;
+    margin: 0;
+    border-radius: 0;
+    -webkit-transition: background-color .25s ease, color .25s ease, margin .25s ease;
+    -moz-transition: background-color .25s ease, color .25s ease, margin .25s ease;
+    -ms-transition: background-color .25s ease, color .25s ease, margin .25s ease;
+    -o-transition: background-color .25s ease, color .25s ease, margin .25s ease;
+    transition: background-color .25s ease, color .25s ease, margin .25s ease;
+}
+.subnav .nav-pills>.active>a, .subnav .nav-pills>.current-menu-item>a, .subnav .nav-pills>.active>a:hover, .subnav .nav-pills>.current-menu-item>a:hover, .subnav .nav-pills>.active>a:focus, .subnav .nav-pills>.current-menu-item>a:focus {
+    color: #333;
+    background-color: #eee;
 }

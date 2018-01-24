@@ -27,7 +27,8 @@
 //                                if ($listNews[0]['published_time']) echo VtHelper::getFormatDate($listNews[0]['published_time']);
 //                                ?>
 <!--                            </span>-->
-                            <?php echo VtHelper::truncate($listNews[0]['header'], 80, '...'); ?><a href="<?php echo url_for2('article_detail', array('slug' => $listNews[0]['slug'])) ?>" class="readmore" title="Xem tiếp">...Chi tiết >></a></p>
+                            <?php echo VtHelper::truncate($listNews[0]['header'], 80, '...'); ?><a href="<?php echo url_for2('article_detail', array('slug' => $listNews[0]['slug'])) ?>" class="readmore" title="Xem tiếp">...Chi tiết
+                                >></a></p>
 
                     </div>
                     <div class="more-news">

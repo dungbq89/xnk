@@ -20,14 +20,14 @@ class ajaxActions extends sfActions{
         $keyword = $request->getParameter('keyword');
         $pageIndex = $request->getParameter('pageIndex');
         $pageSize =  10;
-        $myPager = new sfDoctrinePager('VtpArticle', $pageSize);
+        $myPager = new sfDoctrinePager('AdArticle', $pageSize);
         $keyword = trim($keyword);
         $articleId = sfContext::getInstance()->getUser()->getAttribute('article_id');
         if($articleId){
-            $myPager->setQuery(VtpArticleTable::getSearchArticle($keyword,$articleId));
+            $myPager->setQuery(AdArticleTable::getSearchArticle($keyword,$articleId));
         }
         else{
-            $myPager->setQuery(VtpArticleTable::getSearchArticle($keyword));
+            $myPager->setQuery(AdArticleTable::getSearchArticle($keyword));
         }
         $myPager->setPage($this->getRequestParameter('page', $pageIndex));
         $myPager->init();

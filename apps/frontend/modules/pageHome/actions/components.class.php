@@ -33,7 +33,7 @@ class pageHomeComponents extends sfComponents
     }
     public function executeActivities(sfWebRequest $request)
     {
-        $limit = 6;
+        $limit = 15;
         $type = 2;
         $this->values = AdActivityTable::getAllValues($type, $limit);
     }
