@@ -2,6 +2,7 @@ advertise_template:
   topone: {value: topone, alias: "Quảng cáo Slide"}
   special: {value: special, alias: "Quảng  cáo sản phẩm hot"}
   image: {value: image, alias: "Ảnh quảng cáo"}
+  banneritem: {value: banneritem, alias: "Banner từng trang"}
 view_page:
   homepage: {value: homepage, alias: "Trang chủ"}
   introduction: {value: introduction, alias: "Khóa huấn luyện"}

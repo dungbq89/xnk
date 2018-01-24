@@ -197,6 +197,15 @@
             autoPlay:true,
             loop:true,
             items:1,
+            dots: false,
+            pagination: false,
+        });
+        $(".banner-item").owlCarousel({
+            autoPlay:true,
+            loop:true,
+            items:1,
+            dots: false,
+            pagination: false,
         });
     });
 </script>

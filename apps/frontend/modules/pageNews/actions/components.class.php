@@ -22,7 +22,13 @@ class pageNewsComponents extends sfComponents
         $route = sfContext::getInstance()->getRouting()->getCurrentRouteName();
 //        $adVertises = AdAdvertiseTable::getInstance()->getAdvertise($route, 'image');
         $this->adVertises = AdAdvertiseTable::getInstance()->getAdvertiseV3($route, 'image');
-
+    }
+    public function executeBannerItem(sfWebRequest $request)
+    {
+        // Anh quang cao
+        $route = sfContext::getInstance()->getRouting()->getCurrentRouteName();
+//        $adVertises = AdAdvertiseTable::getInstance()->getAdvertise($route, 'image');
+        $this->adVertises = AdAdvertiseTable::getInstance()->getAdvertiseV3($route, 'banneritem');
     }
 
 }

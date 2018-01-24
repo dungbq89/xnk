@@ -2,15 +2,19 @@
 <?php echo sprintf('%s', htmlentities($article['title'])) ?>
 <?php end_slot() ?>
 
-<header><h1><?php echo htmlentities($article['title']) ?></h1>
-</header>
+<!--<header><h1>--><?php //echo htmlentities($article['title']) ?><!--</h1>-->
+<!--</header>-->
 
 <div class="container posts-archives">
+
+    <?php include_component('pageNews', 'bannerItem') ?>
+
     <div class="row">
         <div class="col-sm-8">
             <article id="post-211"
                      class="post-211 post type-post status-publish format-gallery hentry category-kids category-toys tag-spring post_format-post-format-gallery">
-                <h2 class="entry-title"><?php echo $article['header'] ?></h2>
+                <h2 class="entry-title" style="font-weight: bold"><?php echo $article['title'] ?></h2>
+                <h3 class="entry-title" style="font-size: 20px"><?php echo $article['header'] ?></h3>
 
                 <div class="entry-meta">
                     <span class="date"><i class="fa fa-calendar"></i><time datetime="2018-01-13T17:08:58+00:00">
