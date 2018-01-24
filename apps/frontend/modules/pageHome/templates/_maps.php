@@ -25,7 +25,7 @@
 
             var mapOptions = {
                 scrollwheel: false,
-                zoom: 16,
+                zoom: 18,
                 center: new google.maps.LatLng(21.024750, 105.805687),
                 mapTypeControlOptions: {
                     mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']

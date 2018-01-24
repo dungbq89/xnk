@@ -31,6 +31,9 @@
 
                 <div class="entry-content">
                     <div>
+                        <?php echo $video['description']; ?>
+                    </div>
+                    <div style="padding: 20px;">
                         <?php echo $video['body']; ?>
                     </div>
                 </div>

@@ -502,4 +502,14 @@ class VtpCategoryTable extends Doctrine_Table
         }
         return false;
     }
+
+    public static function getCategoryByParentIDNew($parentId)
+    {
+        $query = VtpCategoryTable::getInstance()->createQuery()
+            ->where(($parentId != '') ? 'parent_id=?' : '(parent_id=? or parent_id is null)', $parentId)
+            ->andWhere('lang=?', sfContext::getInstance()->getUser()->getCulture())
+            ->andWhere('is_active=1')
+            ->orderby('priority asc');
+        return $query->fetchArray();
+    }
 }

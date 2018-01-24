@@ -36,14 +36,14 @@ $n = count($listDocument);
                                             <div class="text">
                                                 <div class="post-more"><a
                                                         href="<?php echo $pathDoc ?>" target="_blank"
-                                                        class="btn btn-primary">Download</a></div>
+                                                        class="btn btn-primary">Tải tài liệu</a></div>
 
                                             </div>
                                         </div>
                                     </div>
                                     <div class="entry-content">
-                                        <div class="entry-content-p">
-                                            <p> <?php echo htmlspecialchars($doc->name) ?> </p>
+                                        <div class="entry-content-p" style="padding-top: 10px !important;">
+                                            <p style="color: #e75d5d; font-size: 16px; font-weight: bold;"> <?php echo htmlspecialchars($doc->name) ?> </p>
                                         </div>
 
                                         <div class="excerpt-content">

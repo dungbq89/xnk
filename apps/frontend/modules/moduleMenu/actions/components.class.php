@@ -64,6 +64,8 @@ class moduleMenuComponents extends sfComponents
         $this->listAlbum = AdAlbumTable::getAllAlbum()->fetchArray();
     }
     public function executeHeaderMobile(){
+        $parentId = 4;
+        $this->listChild = VtpCategoryTable::getCategoryByParentIDNew($parentId);
 
     }
 
