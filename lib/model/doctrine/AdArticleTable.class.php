@@ -122,7 +122,7 @@ class AdArticleTable extends Doctrine_Table
     {
         $querry = self::getActiveArticleQuery()
             ->select('a.id,a.title,a.slug')
-            ->innerJoin("a.VtpCategory r ON r.related_article_id=a.id")
+            ->innerJoin("a.AdArticlesRelated r ON r.related_article_id=a.id")
             ->where('r.article_id=?', $article_id)
             ->orderBy('a.is_hot DESC, a.published_time desc');
         if ($limit)

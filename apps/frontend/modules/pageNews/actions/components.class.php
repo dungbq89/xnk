@@ -30,5 +30,4 @@ class pageNewsComponents extends sfComponents
 //        $adVertises = AdAdvertiseTable::getInstance()->getAdvertise($route, 'image');
         $this->adVertises = AdAdvertiseTable::getInstance()->getAdvertiseV3($route, 'banneritem');
     }
-
 }
