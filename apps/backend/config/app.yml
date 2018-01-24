@@ -72,6 +72,10 @@ all:
               credentials: [[admin]]
               route: ad_activity
               icon: users6.png
+            Quản lý link liên kết:
+              credentials: [[admin]]
+              route: ad_link
+              icon: users6.png
         Quản trị hệ thống:
           credentials: [admin]
           dropdown:

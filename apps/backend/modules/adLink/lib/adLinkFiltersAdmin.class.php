@@ -24,13 +24,13 @@ class adLinkFiltersAdmin extends BaseAdLinkFormFilter
         ));
 
 //    if(sfContext::getInstance()->getUser()->isSuperAdmin()) {
-        $this->widgetSchema['type'] = new sfWidgetFormChoice(array(
-            'choices' => $this->getLinkType(),
-            'multiple' => false,
-            'expanded' => false));
-        $this->validatorSchema['type'] = new sfValidatorChoice(array(
-            'required' => false,
-            'choices' => array_keys($this->getLinkType()),));
+//        $this->widgetSchema['type'] = new sfWidgetFormChoice(array(
+//            'choices' => $this->getLinkType(),
+//            'multiple' => false,
+//            'expanded' => false));
+//        $this->validatorSchema['type'] = new sfValidatorChoice(array(
+//            'required' => false,
+//            'choices' => array_keys($this->getLinkType()),));
 //    }
 
         $this->widgetSchema->setNameFormat('ad_article_filters[%s]');

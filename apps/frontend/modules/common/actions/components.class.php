@@ -17,6 +17,9 @@ class commonComponents extends sfComponents
     public function executeSupport($request) {
 
     }
+    public function executeFacebookChat($request) {
+
+    }
 
 
 }

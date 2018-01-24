@@ -47,7 +47,7 @@ class AdAdvertiseTable extends Doctrine_Table
      * @param $template
      * @return array
      */
-    public static function getAdvertise($page, $template, $portalId)
+    public static function getAdvertise($page, $template, $portalId = false)
     {
         return self::getActiveAdvertise()
             ->select('i.file_path, a.view_type, a.height, a.width, a.name, i.link')
@@ -84,4 +84,24 @@ class AdAdvertiseTable extends Doctrine_Table
         return false;
     }
 
+
+    public function getAdvertiseV3($page, $template)
+    {
+        $query1 = AdAdvertiseLocationTable::getInstance()->createQuery('l')
+            ->andWhere('l.page=?', $page)
+            ->andWhere('l.template=?', $template)->fetchArray();
+        if ($query1) {
+            $adv = $query1['0'];
+            $listImage = AdAdvertiseImageTable::getInstance()->createQuery()
+                ->andWhere('advertise_id=?', $adv['advertise_id'])
+                ->andWhere('is_active=1')
+                ->orderBy('priority asc')
+                ->fetchArray();
+            if (!empty($listImage)) {
+                return $listImage;
+            }
+        }
+        return false;
+
+    }
 }

@@ -16,6 +16,19 @@ class pageNewsComponents extends sfComponents
         $this->listNews = AdArticleTable::getInstance()->getListNewsV2(5);
         // tin xem nhieu nhat
         $this->listViews = AdArticleTable::getInstance()->getMostViewNewsV2(5);
+        // link lien ket
+        $this->linls = AdLinkTable::getInstance()->getLink();
+        // Anh quang cao
+        $route = sfContext::getInstance()->getRouting()->getCurrentRouteName();
+//        $adVertises = AdAdvertiseTable::getInstance()->getAdvertise($route, 'image');
+        $this->adVertises = AdAdvertiseTable::getInstance()->getAdvertiseV3($route, 'image');
+    }
+    public function executeBannerItem(sfWebRequest $request)
+    {
+        // Anh quang cao
+        $route = sfContext::getInstance()->getRouting()->getCurrentRouteName();
+//        $adVertises = AdAdvertiseTable::getInstance()->getAdvertise($route, 'image');
+        $this->adVertises = AdAdvertiseTable::getInstance()->getAdvertiseV3($route, 'banneritem');
     }
 
 }

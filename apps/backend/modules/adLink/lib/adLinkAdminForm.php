@@ -18,15 +18,15 @@ class adLinkAdminForm extends BaseAdLinkForm {
         $this->widgetSchema['link'] = new sfWidgetFormInputText(array());
         $this->validatorSchema['link'] = new sfValidatorString(array('required' => true, 'trim' => true, 'max_length' => 255));
 
-        $this->widgetSchema['type'] = new  sfWidgetFormChoice(array(
-            'choices' => $this->getLinkType(),
-            'multiple' => false,
-            'expanded' => false
-        ));
-        $this->validatorSchema['type'] = new sfValidatorChoice(array(
-            'required' => true,
-            'choices' => array_keys($this->getLinkType()),
-        ));
+//        $this->widgetSchema['type'] = new  sfWidgetFormChoice(array(
+//            'choices' => $this->getLinkType(),
+//            'multiple' => false,
+//            'expanded' => false
+//        ));
+//        $this->validatorSchema['type'] = new sfValidatorChoice(array(
+//            'required' => true,
+//            'choices' => array_keys($this->getLinkType()),
+//        ));
 
         $this->widgetSchema['priority'] = new sfWidgetFormInputText(array('default' => 0), array('size' => 5, 'maxlength' => 5));
         $this->validatorSchema['priority'] = new sfValidatorInteger(array('required' => false, "min"=>0, 'max'=>99999, 'trim' => true),array('min'=>$i18n->__('Thứ tự phải là số nguyên dương'),'max'=>$i18n->__('Tối đa 5 ký tự'),'invalid'=> $i18n->__('Thứ tự phải là số nguyên dương')));

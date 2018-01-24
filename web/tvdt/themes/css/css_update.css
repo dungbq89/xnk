@@ -1,5 +1,5 @@
 /*.navbar-nav > li > a {*/
-    /*line-height: 90px !important;*/
+/*line-height: 90px !important;*/
 /*}*/
 
 body {
@@ -72,7 +72,7 @@ body {
 }
 
 .post-content-item-right .entry-content .entry-content-p, .post-content-item-left .entry-content .entry-content-p {
-    font-size: 1.875em;
+    font-size: 14px;
     line-height: 1.6;
     letter-spacing: 0.04em;
     font-weight: 700;
@@ -188,4 +188,10 @@ body {
     font-style: italic;
     letter-spacing: .01em;
     line-height: 1.5em;
+}
+
+.banner-item img {
+    width: 100%;
+    max-height: 200px;
+    margin-bottom: 20px;
 }
