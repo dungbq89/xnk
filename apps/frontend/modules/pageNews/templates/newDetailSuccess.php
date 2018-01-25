@@ -13,8 +13,8 @@
         <div class="col-sm-8">
             <article id="post-211"
                      class="post-211 post type-post status-publish format-gallery hentry category-kids category-toys tag-spring post_format-post-format-gallery">
-                <h2 class="entry-title" style="font-weight: bold"><?php echo $article['title'] ?></h2>
-                <h3 class="entry-title" style="font-size: 20px"><?php echo $article['header'] ?></h3>
+                <h2 class="entry-title" style="font-weight: bold; font-size: 18px;"><?php echo $article['title'] ?></h2>
+<!--                <h3 class="entry-title" style="font-size: 20px">--><?php //echo $article['header'] ?><!--</h3>-->
 
                 <div class="entry-meta">
                     <span class="date"><i class="fa fa-calendar"></i><time datetime="2018-01-13T17:08:58+00:00">
@@ -34,9 +34,29 @@
                         <?php echo $article['body'] ?>
                     </div>
                 </div>
+
+                <?php
+                if(isset($listArticle) && count($listArticle)){
+                    ?>
+                    <div class="list-related">
+                        <h3 style="color: #e75d5d; font-weight: bold;">Các bài viết liên quan</h3>
+                        <ul style="margin: 0px; padding: 0px; font-size: 17px;">
+                            <?php
+                            foreach ($listArticle as $value){
+                                ?>
+                                <li><a href="<?php echo url_for1('@news_detail?slug=' . $value['slug']) ?>"><?php echo $value['title']; ?></a> </li>
+                                <?php
+                            }
+                            ?>
+                        </ul>
+                    </div>
+                    <?php
+                }
+                ?>
+
                 <div class="entry-content">
                     <div class="fb-comments"
-                         data-href="<?php echo 'http://nehobcity.xyz' . url_for1('@news_detail?slug=' . $article['slug']) ?>"
+                         data-href="<?php echo sfConfig::get('app_seo_url') . url_for1('@news_detail?slug=' . $article['slug']) ?>"
                          data-colorscheme="light"
                          data-numposts="5" data-width="500"></div>
                 </div>

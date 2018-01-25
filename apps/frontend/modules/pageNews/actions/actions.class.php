@@ -57,6 +57,7 @@ class pageNewsActions extends sfActions
         if (!empty($article)) {
             AdArticleTable::getInstance()->updateHitCounter($article[0]['id']);
             $this->article = $article[0];
+            $this->listArticle = AdArticleTable::getListArticleRelated($article[0]['id'], 10);
         } else {
             return $this->redirect404();
         }

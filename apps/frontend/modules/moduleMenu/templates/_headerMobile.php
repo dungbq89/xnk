@@ -41,7 +41,7 @@
                 <li id="menu-item-1709"
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children dropdown menu-item-1709 menu-item-has-icon menu-item-has-description"
                     role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" itemprop="name">
-                    <a title target rel href="#" role="button" aria-expanded="false" itemprop="url"><span
+                    <a title target rel href="<?php echo url_for1('@category_new?slug=tu-hoc') ?>" role="button" aria-expanded="false" itemprop="url"><span
                                 class="glyphicon glyphicon-file" role="navigation" itemscope
                                 itemtype="http://schema.org/SiteNavigationElement"></span> Tự học <span class="caret"
                                                                                                        role="navigation"
