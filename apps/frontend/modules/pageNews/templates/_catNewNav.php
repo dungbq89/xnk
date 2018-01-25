@@ -23,7 +23,7 @@
     <aside id="recent-posts-3" class="widget widget_recent_entries"><h5>Quảng cáo</h5>
         <ul>
             <li>
-                <?php if (count($adVertises > 1)) {
+                <?php if ($adVertises && count($adVertises > 1)) {
                     ?>
                     <div class="slide-advertise">
                         <?php
@@ -40,16 +40,7 @@
                         }
                         ?>
                     </div>
-                    <?php
-                } else {
-                    $adv = $adVertises[0];
-                    $path = '/uploads/' . sfConfig::get('app_advertise_images') . $adv['file_path'];
-                    ?>
-                    <a href="<?php echo $adv['link'] ?>" data-img="<?php echo $path ?>">
-                        <img src="<?php echo VtHelper::getThumbUrl($path, 321, 184, 'image_default'); ?>">
-                    </a>
-                    <?php
-                } ?>
+                    <?php } ?>
             </li>
         </ul>
     </aside>
