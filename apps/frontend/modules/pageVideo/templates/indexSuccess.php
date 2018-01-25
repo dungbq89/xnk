@@ -50,7 +50,7 @@ $n = count($listVideo);
                                     </p></div>
                                 <div class="post-more"><a
                                         href="<?php echo url_for1('@videoDetail?slug=' . $video->id) ?>"
-                                        class="btn btn-primary">Read more</a></div>
+                                        class="btn btn-primary">Chi tiết</a></div>
                             </div>
                         </article>
                     </div>

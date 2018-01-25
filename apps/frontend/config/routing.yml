@@ -94,8 +94,14 @@ page_search:
 listDocument:
   url:  /kho-tai-lieu/:page
   param: { module: pageDocument, action: listDocument, page: 1}
-
-  
+# cam nhan hoc vien
+listStudent:
+  url:  /cam-nhan-hoc-vien/:page
+  param: { module: pageDocument, action: listStudent, page: 1}
+# cam nhan hoc vien
+detailStudent:
+  url:  /chi-tiet-hoc-vien/:id
+  param: { module: pageDocument, action: detailStudent, id: ''}
 #trang danh ba hoi vien
 contact:
   url: /content/:slug

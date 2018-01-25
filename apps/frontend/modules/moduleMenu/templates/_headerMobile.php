@@ -77,7 +77,7 @@
                 <li id="menu-item-1701"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1715 menu-item-has-icon menu-item-has-description"
                     role="navigation" itemscope itemtype="" itemprop="name">
-                    <a title target rel href="<?php echo url_for1('@listDocument') ?>" itemprop="url"><span
+                    <a title target rel href="<?php echo url_for1('@listStudent') ?>" itemprop="url"><span
                                 class="glyphicon glyphicon-heart" role="navigation" itemscope ></span> Cảm nhận học viên <br/><span
                                 class="menu-item-description" role="navigation" itemscope
                                 itemtype="http://schema.org/SiteNavigationElement">Cảm nhận của tôi</span></a>

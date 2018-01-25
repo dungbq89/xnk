@@ -95,8 +95,27 @@ class pageDocumentActions extends sfActions
     public function executeListDocument(sfWebRequest $request)
     {
         $limit = 9;
-        $page = $request->getParameter('page');
+        $this->page = $page = $request->getParameter('page');
         $pager = AdDocumentDownloadTable::getInstance()->getListDocumentDownload($limit, $page);
         $this->pager = $pager;
+    }
+
+    public function executeListStudent(sfWebRequest $request)
+    {
+        $limit = 9;
+        $this->page = $page = $request->getParameter('page');
+        $pager = AdHocVienTable::getInstance()->getListStudent($limit, $page);
+        $this->pager = $pager;
+    }
+
+    public function executeDetailStudent(sfWebRequest $request){
+        $id = $request->getParameter('id');
+        $student = AdHocVienTable::getInstance()->createQuery()->andWhere('id=?', $id)
+            ->andWhere('is_active=?', 1)->fetchArray();
+        if (!empty($student)) {
+            $this->student = $student[0];
+        } else {
+            return $this->redirect404();
+        }
     }
 }
