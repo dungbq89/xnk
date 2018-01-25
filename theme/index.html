@@ -12,7 +12,7 @@
     <title>Magicreche. Wordpress theme for Creche, Playschool or Preschool </title>
     <style>
         .navbar-nav > li > a {
-            line-height: 90px !important;
+            /*line-height: 90px !important;*/
         }
 
         body {
@@ -124,9 +124,13 @@
           media='all'/>
     <link rel='stylesheet' id='magicreche-pacifico-css'
           href='http://fonts.googleapis.com/css?family=Pacifico&#038;ver=4.9.1' type='text/css' media='all'/>
-    <link rel='stylesheet' id='bootstrap-css'
-          href='tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/css/bootstrap.min.css?ver=4.9.1'
-          type='text/css' media='all'/>
+
+    <!--<link rel='stylesheet' id='bootstrap-css'-->
+    <!--href='tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/css/bootstrap.min.css?ver=4.9.1'-->
+    <!--type='text/css' media='all'/>-->
+
+    <link rel='stylesheet' href='bootstrap.min.3.3.4.css' type='text/css' media='all'/>
+
     <link rel='stylesheet' id='fancybox-css'
           href='tvdt/themes/magicreche/wordpress/wp-content/themes/magicreche/css/jquery.fancybox.css?ver=4.9.1'
           type='text/css' media='all'/>
@@ -183,10 +187,21 @@ Click the help icon above to learn more.
                 <li id="menu-item-314"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-314 active">
                     <a title="Home" href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/">Home</a></li>
+                <li id="menu-item-314"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-314 active">
+                    <a title="Home" href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/">Home</a></li>
+
                 <li id="menu-item-260"
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-260 dropdown">
-                    <a title="About" href="#" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">About
-                        <span class="caret"></span></a>
+                    <a title="About" href="#" style="line-height: 20px;    padding-top: 20px;text-align: center"
+                       data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true">
+                        <span class="fa fa-camera-retro fa-lg"></span>
+                        About<span class="caret"></span>
+
+                        <p class="menu-item-description" style=" color: #999; text-align: center;padding-bottom: 15px;font-size: 11px">
+                            Tôi nên biết</p>
+                    </a>
+
                     <ul role="menu" class=" dropdown-menu">
                         <li id="menu-item-267"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a
@@ -269,6 +284,7 @@ Click the help icon above to learn more.
                 </li>
             </ul>
         </div>
+
     </div>
 </div>
 <section id="start" class="post-25 page type-page status-publish hentry scheme-alternative no-arrows fullscreen"
@@ -944,7 +960,7 @@ Click the help icon above to learn more.
             background-color: #DF4432;
         }</style>
         <link rel="stylesheet" type="text/css"
-              href="//fonts.googleapis.com/css?family=Open Sans:regular&amp;subset=latin-ext">
+              href="fonts.googleapis.com/css?family=Open Sans:regular&amp;subset=latin-ext">
         <style type="text/css">.tt_tabs .tt_timetable {
             font-family: "Open Sans" !important;
         }</style>
