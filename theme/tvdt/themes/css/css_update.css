@@ -89,3 +89,16 @@
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
+
+#menu-main-menu a.menu-header-1 {
+    line-height: 20px;
+    padding-top: 20px;
+    text-align: center
+}
+
+#menu-main-menu p.menu-header-2 {
+    color: #999;
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 11px
+}
