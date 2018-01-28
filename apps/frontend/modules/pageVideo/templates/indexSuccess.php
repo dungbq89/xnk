@@ -2,7 +2,8 @@
 $listVideo = $pager->getResults();
 $n = count($listVideo);
 ?>
-<header><h1></h1>
+<header>
+    <h1>Danh sách video</h1>
 </header>
 
 <section id="latest-posts pageVideo" class="post-18 page type-page status-publish hentry">
