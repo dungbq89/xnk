@@ -19,6 +19,10 @@
 
                 <div class="entry-content" style="overflow: hidden;">
                     <div style="">
+                        <p style="text-align: center; padding: 20px;">
+                            <img width="600px"
+                                 src="<?php echo VtHelper::getPathImage($student['image'], sfConfig::get('app_article_images', 'category_images')) ?>">
+                        </p>
                         <?php echo $student['body'] ?>
                     </div>
                 </div>

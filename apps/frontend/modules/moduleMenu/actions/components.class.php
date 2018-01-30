@@ -63,6 +63,7 @@ class moduleMenuComponents extends sfComponents
         //lay ra danh sach chuyen muc con
         $parentId = 4;
         $this->listChild = VtpCategoryTable::getCategoryByParentIDNew($parentId);
+        $this->catDocument = AdDocumentCategoryTable::getAllCategoryDocument()->fetchArray();
     }
     public function executeHeaderMobile(){
         $parentId = 4;

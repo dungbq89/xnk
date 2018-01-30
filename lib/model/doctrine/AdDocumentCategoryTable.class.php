@@ -32,12 +32,12 @@ class AdDocumentCategoryTable extends Doctrine_Table
     }
 
     //lay danh sach chuyen muc tai lieu hien thi trang chu
-    public static function getCategoryDocumentHot($limit=null)
+    public static function getAllCategoryDocument($limit=null)
     {
         $query = AdDocumentCategoryTable::getInstance()->createQuery()
-            ->select('name')
+//            ->select('name')
             ->Where('is_active=?', VtCommonEnum::NUMBER_ONE)
-            ->andWhere('is_home=?', VtCommonEnum::NUMBER_ONE);
+            ->orderBy('priority desc');
         if($limit){
             $query->limit($limit);
         }
