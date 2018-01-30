@@ -11,6 +11,9 @@
     .navbar-nav.navbar-right:last-child{
         margin-right: -20px;
     }
+    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+        background-color: transparent;
+    }
 </style>
 <header id="masthead" class="site-header navbar-large navbar navbar-fixed-top navbar-default" role="banner">
     <div class="container">
