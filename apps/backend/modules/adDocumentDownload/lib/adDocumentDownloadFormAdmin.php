@@ -50,6 +50,9 @@ class adDocumentDownloadFormAdmin extends BaseAdDocumentDownloadForm
             ));
         $this->validatorSchema['lang'] = new sfValidatorPass();
 
+        $this->widgetSchema['category_id'] = new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('AdDocCategory')));
+        $this->validatorSchema['category_id'] = new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('AdDocCategory'), 'required' => false));
+
 
         $this->widgetSchema->setNameFormat('adDocumentDownloadFormAdmin[%s]');
         $this->errorSchema = new sfValidatorErrorSchema($this->validatorSchema);

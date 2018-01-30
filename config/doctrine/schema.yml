@@ -262,7 +262,6 @@ AdDocumentCategory:
     priority: {type: integer(5), notnull: false, default: null}
     is_home: { type: boolean, notnull: true, default: false, comment: "Trang chủ (0: không hiển thị, 1: hiển thị)" }
     is_active: { type: boolean, notnull: true, default: false, comment: "Trạng thái hiển thị (0: Chưa kích hoạt, 1: đã kích hoạt)" }
-
 #Quan ly van ban
 AdDocument:
   tableName: ad_document
@@ -503,6 +502,9 @@ AdDocumentDownload:
     image: { type: string(255), notnull: true,  comment: "ảnh đại diện"}
     priority: { type: integer(5), notnull: true, comment: "Độ ưu tiên hiển thị" }
     is_active: { type: boolean, notnull: false, default: false, comment: "Trạng thái"}
+    category_id: {type: integer(8), notnull: false, default: null}
+  relations:
+    AdDocCategory: { class: AdDocumentCategory, local: category_id, type: one, foreignAlias: DocumentCategory }
 AdHocVien:
   #connection: doctrine
   tableName: ad_hoc_vien
