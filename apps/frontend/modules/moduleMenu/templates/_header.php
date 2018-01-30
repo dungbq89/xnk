@@ -1,5 +1,35 @@
 <link rel='stylesheet' href='/css/bootstrap.min.3.3.4.css' type='text/css' media='all'/>
+<style>
+    .navbar-default .navbar-nav>li>a{
+        color: #333;
+        font-weight: 400;
+        text-transform: none;
+        padding: 0px 3px;
+    }
+    .navbar-default .navbar-nav>li>a:hover{
+        color: #337ab7;
+    }
 
+    .menu-header-1{
+        padding: 30px 10px;
+    }
+    .menu-item{
+        padding: 0px 10px;
+    }
+    #menu-main-menu a.menu-header-1{
+        padding: 30px 10px;
+    }
+    #menu-main-menu p.menu-header-2{
+        color: #999;
+        font-size: 11px;
+        font-style: italic;
+        font-weight: 400;
+        text-transform: none;
+    }
+    p.menu-header-2:hover{
+        color: #337ab7;
+    }
+</style>
 <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -15,7 +45,7 @@
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-314 active">
                     <a  class="menu-header-1"
                         title="Home" href="<?php echo url_for('@homepage') ?>">
-                        <span class="fa fa-camera-retro fa-lg"></span>
+                        <span class="glyphicon glyphicon-user" role="navigation" itemscope ></span>
                         Trang chủ
                         <p class="menu-item-description menu-header-2">
                             Tôi nên biết</p>
@@ -34,36 +64,21 @@
                     </a>
 
                     <ul role="menu" class=" dropdown-menu">
-                        <li id="menu-item-267"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a
-                                title="Stuff"
-                                href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/#meet-our-stuff">Stuff</a>
-                        </li>
-                        <li id="menu-item-268"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a
-                                title="Mission"
-                                href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/#our-mission">Mission</a>
-                        </li>
-                        <li id="menu-item-266"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266"><a
-                                title="Activities"
-                                href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/#activities">Activities</a>
-                        </li>
-                        <li id="menu-item-265"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-265"><a
-                                title="Testimonials"
-                                href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/#testimonials">Testimonials</a>
-                        </li>
-                        <li id="menu-item-264"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-264"><a
-                                title="Gallery"
-                                href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/#gallery">Gallery</a>
-                        </li>
-                        <li id="menu-item-263"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-263"><a
-                                title="Membership"
-                                href="http://www.coffeecreamthemes.com/themes/magicreche/wordpress/#membership">Membership</a>
-                        </li>
+                        <?php
+                        if(isset($listChild) && count($listChild)){
+                            foreach ($listChild as $child){
+                                ?>
+                                <li id="menu-item-267"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a
+                                            title="Stuff"
+                                            href="<?php echo url_for('category_new',array('slug'=>$child['slug'])); ?>"><?php echo $child['name']; ?></a>
+                                </li>
+                                <?php
+                            }
+                        }
+
+                        ?>
+
                     </ul>
                 </li>
 

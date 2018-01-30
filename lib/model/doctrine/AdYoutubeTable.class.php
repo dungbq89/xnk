@@ -22,7 +22,7 @@ class AdYoutubeTable extends Doctrine_Table
     {
         $query = $this->createQuery()
             ->where('is_active=?', VtCommonEnum::NUMBER_ONE)
-            ->orderBy('updated_at desc, priority asc');
+            ->orderBy('priority desc');
 
         $pager = new sfDoctrinePager('AdYoutube', $limit);
         $pager->setQuery($query);

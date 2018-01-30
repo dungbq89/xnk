@@ -60,8 +60,9 @@ class moduleMenuComponents extends sfComponents
     }
 
     public function executeHeader(){
-        //lay ra danh sach album
-        $this->listAlbum = AdAlbumTable::getAllAlbum()->fetchArray();
+        //lay ra danh sach chuyen muc con
+        $parentId = 4;
+        $this->listChild = VtpCategoryTable::getCategoryByParentIDNew($parentId);
     }
     public function executeHeaderMobile(){
         $parentId = 4;

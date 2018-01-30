@@ -94,13 +94,13 @@
                 <p>Hotline: <a href="tel:+84986538963">0986538963</a> (Ms Trang)/  <a href="tel:+84906246584">0906246584</a> (Mrs Thúy)</p>
                 <div class="col-1-5 tab-col-1-1 mobile-col-1-1">
                     <div class="smo-footer1">
-                        <a href="https://www.facebook.com/giasuxuatnhapkhau/"><i
+                        <a href="https://www.facebook.com/giasuxuatnhapkhau/" target="_blank"><i
                                     class="fa fa-facebook smo-footer"></i></a>
-                        <a href="https://plus.google.com/u/0/115589521808473965426"><i class="fa fa-google-plus smo-footer"></i></a>
+                        <a href="https://plus.google.com/u/0/115589521808473965426" target="_blank"><i class="fa fa-google-plus smo-footer"></i></a>
 <!--                        <a href="//twitter.com"><i class="fa fa-twitter smo-footer"></i></a>-->
-                        <a href="https://www.pinterest.com/yeuxuatnhapkhau/"><i class="fa fa-linkedin smo-footer"></i></a>
-                        <a href="https://www.youtube.com/channel%2FUCTrXrs8qdHQGYowHOi7LVtw"><i class="fa fa-youtube smo-footer"></i></a>
-                        <a href="https://www.instagram.com/yeuxuatnhapkhau/"><i class="fa fa-sitemap smo-footer"></i></a>
+                        <a href="https://www.pinterest.com/yeuxuatnhapkhau/" target="_blank"><i class="fa fa-linkedin smo-footer"></i></a>
+                        <a href="https://www.youtube.com/channel%2FUCTrXrs8qdHQGYowHOi7LVtw" target="_blank"><i class="fa fa-youtube smo-footer"></i></a>
+                        <a href="https://www.instagram.com/yeuxuatnhapkhau/" target="_blank"><i class="fa fa-sitemap smo-footer"></i></a>
                     </div>
                 </div>
             </div>
