@@ -14,21 +14,27 @@ Doctrine_Manager::getInstance()->bindComponent('AdDocumentDownload', 'doctrine')
  * @property string $image
  * @property integer $priority
  * @property boolean $is_active
+ * @property integer $category_id
+ * @property AdDocumentCategory $AdDocCategory
  * 
- * @method string             getName()        Returns the current record's "name" value
- * @method string             getDescription() Returns the current record's "description" value
- * @method clob               getBody()        Returns the current record's "body" value
- * @method string             getLink()        Returns the current record's "link" value
- * @method string             getImage()       Returns the current record's "image" value
- * @method integer            getPriority()    Returns the current record's "priority" value
- * @method boolean            getIsActive()    Returns the current record's "is_active" value
- * @method AdDocumentDownload setName()        Sets the current record's "name" value
- * @method AdDocumentDownload setDescription() Sets the current record's "description" value
- * @method AdDocumentDownload setBody()        Sets the current record's "body" value
- * @method AdDocumentDownload setLink()        Sets the current record's "link" value
- * @method AdDocumentDownload setImage()       Sets the current record's "image" value
- * @method AdDocumentDownload setPriority()    Sets the current record's "priority" value
- * @method AdDocumentDownload setIsActive()    Sets the current record's "is_active" value
+ * @method string             getName()          Returns the current record's "name" value
+ * @method string             getDescription()   Returns the current record's "description" value
+ * @method clob               getBody()          Returns the current record's "body" value
+ * @method string             getLink()          Returns the current record's "link" value
+ * @method string             getImage()         Returns the current record's "image" value
+ * @method integer            getPriority()      Returns the current record's "priority" value
+ * @method boolean            getIsActive()      Returns the current record's "is_active" value
+ * @method integer            getCategoryId()    Returns the current record's "category_id" value
+ * @method AdDocumentCategory getAdDocCategory() Returns the current record's "AdDocCategory" value
+ * @method AdDocumentDownload setName()          Sets the current record's "name" value
+ * @method AdDocumentDownload setDescription()   Sets the current record's "description" value
+ * @method AdDocumentDownload setBody()          Sets the current record's "body" value
+ * @method AdDocumentDownload setLink()          Sets the current record's "link" value
+ * @method AdDocumentDownload setImage()         Sets the current record's "image" value
+ * @method AdDocumentDownload setPriority()      Sets the current record's "priority" value
+ * @method AdDocumentDownload setIsActive()      Sets the current record's "is_active" value
+ * @method AdDocumentDownload setCategoryId()    Sets the current record's "category_id" value
+ * @method AdDocumentDownload setAdDocCategory() Sets the current record's "AdDocCategory" value
  * 
  * @package    symfony
  * @subpackage model
@@ -80,11 +86,20 @@ abstract class BaseAdDocumentDownload extends sfDoctrineRecord
              'default' => false,
              'comment' => 'Trạng thái',
              ));
+        $this->hasColumn('category_id', 'integer', 8, array(
+             'type' => 'integer',
+             'notnull' => false,
+             'length' => 8,
+             ));
     }
 
     public function setUp()
     {
         parent::setUp();
+        $this->hasOne('AdDocumentCategory as AdDocCategory', array(
+             'local' => 'category_id',
+             'foreign' => 'id'));
+
         $timestampable0 = new Doctrine_Template_Timestampable();
         $this->actAs($timestampable0);
     }

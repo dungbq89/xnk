@@ -21,16 +21,17 @@ generator:
         image: {label: "Ảnh đại diện"}
         priority: {label: "Thứ tự ưu tiên"}
         is_active: {label: "Trạng thái"}
+        category_id: {label: Chuyên mục văn bản}
       list:
-        display: [image, name, priority, is_active]
+        display: [image, name,category_id, priority, is_active]
         title: Danh sách tài liệu
         object_actions:
           _edit: {label: Chi tiết}
           _delete: ~
       filter:
-        display: [name]
+        display: [name, category_id]
       form:
-        display: [name, image, link, description, body, priority, is_active]
+        display: [name, category_id, image, link, description, body, priority, is_active]
         class: adDocumentDownloadFormAdmin
       edit:
         title: Chỉnh sửa tài liệu

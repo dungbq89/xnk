@@ -23,6 +23,7 @@ abstract class BaseAdDocumentDownloadForm extends BaseFormDoctrine
       'image'       => new sfWidgetFormInputText(),
       'priority'    => new sfWidgetFormInputText(),
       'is_active'   => new sfWidgetFormInputCheckbox(),
+      'category_id' => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('AdDocCategory'), 'add_empty' => true)),
       'created_at'  => new sfWidgetFormDateTime(),
       'updated_at'  => new sfWidgetFormDateTime(),
     ));
@@ -36,6 +37,7 @@ abstract class BaseAdDocumentDownloadForm extends BaseFormDoctrine
       'image'       => new sfValidatorString(array('max_length' => 255)),
       'priority'    => new sfValidatorInteger(),
       'is_active'   => new sfValidatorBoolean(array('required' => false)),
+      'category_id' => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('AdDocCategory'), 'required' => false)),
       'created_at'  => new sfValidatorDateTime(),
       'updated_at'  => new sfValidatorDateTime(),
     ));

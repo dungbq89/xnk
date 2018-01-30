@@ -74,8 +74,9 @@
 </script>
 <div id="cfacebook">
 
-    <a href="javascript:;" class="chat_fb" onclick="return:false;"><i class="fa fa-facebook-square"></i> Phản hồi của
-        bạn</a>
+    <a href="javascript:;" class="chat_fb" onclick="return:false;"><i class="fa fa-facebook-square"></i>
+    Phản hồi của bạn
+    </a>
 
     <div class="fchat">
         <div class="fb-page" data-tabs="messages" data-href="https://www.facebook.com/giasuxuatnhapkhau/" data-width="250"

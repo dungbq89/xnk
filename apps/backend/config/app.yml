@@ -56,7 +56,15 @@ all:
               credentials: [[admin]]
               route: ad_youtube
               icon: squares36.png
-            Quản lý tài liệu:
+            Quản lý chuyên mục tài liệu:
+              credentials: [[admin]]
+              route: ad_document_category
+              icon: squares36.png
+#            Quản lý tài liệu:
+#              credentials: [[admin]]
+#              route: ad_document
+#              icon: squares36.png
+            Quản lý tài liệu download:
               credentials: [[admin]]
               route: ad_document_download
               icon: squares36.png
