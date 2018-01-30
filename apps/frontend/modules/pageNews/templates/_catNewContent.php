@@ -64,11 +64,11 @@ $n = count($listArticle);
 
                     <div class="excerpt-content">
                         <article>
-                            <p>
+                            <p style="text-align: justify; padding: 5px 0px;">
                                 <?php echo htmlspecialchars($new->header) ?>
                             </p>
 
-                            <div class="more-link-wrapper">
+                            <div class="more-link-wrapper" style="float: right;">
                                 <a class="more-link"
                                    href="<?php echo url_for1('@news_detail?slug=' . $new->slug) ?>">
                                     Xem thêm
@@ -90,7 +90,7 @@ $n = count($listArticle);
     }
     ?>
 
-    <div style="clear: both">
+    <div style="clear: both; margin-top: 15px;">
 
         <?php if ($pager && $pager->haveToPaginate()): ?>
             <div class="paging-bottom-style1">
