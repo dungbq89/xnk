@@ -96,7 +96,8 @@ class pageDocumentActions extends sfActions
     {
         $limit = 9;
         $this->page = $page = $request->getParameter('page');
-        $pager = AdDocumentDownloadTable::getInstance()->getListDocumentDownload($limit, $page);
+        $cat=trim($request->getParameter('cat'));
+        $pager = AdDocumentDownloadTable::getInstance()->getListDocumentDownload($limit, $page, $cat);
         $this->pager = $pager;
     }
 
