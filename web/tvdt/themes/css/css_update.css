@@ -195,3 +195,33 @@ body {
     max-height: 200px;
     margin-bottom: 20px;
 }
+
+/*.menu-header-1 {*/
+    /*line-height: 20px;*/
+    /*padding-top: 20px;*/
+    /*text-align: center*/
+/*}*/
+
+/*.menu-item-description {*/
+    /*color: #999;*/
+    /*text-align: center;*/
+    /*padding-bottom: 15px;*/
+    /*font-size: 11px*/
+/*}*/
+
+#menu-main-menu a.menu-header-1 {
+    line-height: 20px;
+    padding-top: 30px;
+    text-align: center
+}
+
+#menu-main-menu p.menu-header-2 {
+    color: #999;
+    text-align: center;
+    font-size: 11px;
+    text-transform: initial;
+}
+
+#menu-main-menu .fa-caret-down {
+    padding-left: 5px;
+}

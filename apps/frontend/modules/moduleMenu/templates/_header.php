@@ -94,7 +94,7 @@
                 <li id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141">
                     <a class="menu-header-1"
                         title="Shortcodes"
-                        href="<?php echo url_for1('@listStudent') ?>">
+                        href="<?php echo url_for1('@listDocument') ?>">
                         <span class="fa fa-camera-retro fa-lg"></span>
                         Cảm nhận học viên
                         <p class="menu-item-description menu-header-2">Cảm nhận của tôi</p>
