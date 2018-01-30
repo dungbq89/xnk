@@ -6,6 +6,9 @@
 $listStudent = $pager->getResults();
 $n = count($listStudent);
 ?>
+<header>
+    <h1>Cảm nhận học viên</h1>
+</header>
 <div class="container posts-archives">
     <div class="row">
         <!--        <div class="col-sm-8">-->

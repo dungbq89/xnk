@@ -4,7 +4,9 @@
 
 <!--<header><h1>--><?php //echo htmlentities($student['title']) ?><!--</h1>-->
 <!--</header>-->
-
+<header>
+    <h1>Cảm nhận học viên</h1>
+</header>
 <div class="container posts-archives">
 
     <?php include_component('pageNews', 'bannerItem') ?>
