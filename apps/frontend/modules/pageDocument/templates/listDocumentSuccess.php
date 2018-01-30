@@ -74,18 +74,18 @@ $n = count($listDocument);
                             <div class="paging-bottom-style1">
                                 <ul class="pagination">
                                     <?php if ($pager->getPage() >= 2): ?>
-                                        <li><a href="<?php echo url_for1('@listDocument') ?>">
+                                        <li><a href="<?php echo url_for1('@listDocument'. ($cat != false ? ('?cat=' . $cat) : '')) ?>">
                                                 <i class="fa fa-angle-left"></i></a></li>
                                     <?php endif; ?>
                                     <?php foreach ($pager->getLinks() as $page): ?>
                                         <li>
-                                            <a href="<?php echo url_for1('@listDocument?page=' . $page) ?>"
+                                            <a href="<?php echo url_for1('@listDocument?page=' . $page . ($cat != false ? ('&cat=' . $cat) : '')) ?>"
                                                class="<?php echo $page == $pager->getPage() ? 'active' : '' ?>">
                                                 <?php echo $page ?></a></li>
                                     <?php endforeach; ?>
                                     <?php if ($pager->getPage() < $pager->getLastPage()): ?>
                                         <li>
-                                            <a href="<?php echo url_for1('@listDocument?page=' . $pager->getLastPage()) ?>"><i
+                                            <a href="<?php echo url_for1('@listDocument?page=' . $pager->getLastPage(). ($cat != false ? ('&cat=' . $cat) : '')) ?>"><i
                                                     class="fa fa-angle-right"></i></a></li>
                                     <?php endif; ?>
                                 </ul>

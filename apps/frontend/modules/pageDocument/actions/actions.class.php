@@ -96,7 +96,10 @@ class pageDocumentActions extends sfActions
     {
         $limit = 9;
         $this->page = $page = $request->getParameter('page');
-        $pager = AdDocumentDownloadTable::getInstance()->getListDocumentDownload($limit, $page);
+        $cat = trim($request->getParameter('cat', ''));
+        $this->cat = false;
+        if ($cat) $this->cat = $cat;
+        $pager = AdDocumentDownloadTable::getInstance()->getListDocumentDownload($limit, $page, $cat);
         $this->pager = $pager;
     }
 
@@ -108,7 +111,8 @@ class pageDocumentActions extends sfActions
         $this->pager = $pager;
     }
 
-    public function executeDetailStudent(sfWebRequest $request){
+    public function executeDetailStudent(sfWebRequest $request)
+    {
         $id = $request->getParameter('id');
         $student = AdHocVienTable::getInstance()->createQuery()->andWhere('id=?', $id)
             ->andWhere('is_active=?', 1)->fetchArray();

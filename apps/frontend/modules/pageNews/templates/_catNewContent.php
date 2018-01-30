@@ -20,7 +20,8 @@ $n = count($listArticle);
                  class="post-<?php echo $new->id ?> post type-post status-publish format-image has-post-thumbnail hentry category-activities tag-summer post_format-post-format-image">
 
 
-            <div class="<?php echo ($i % 2 == 0) ? 'post-content-item-right' : 'post-content-item-left' ?>">
+            <div class="post-content-item-left">
+<!--            <div class="--><?php //echo ($i % 2 == 0) ? 'post-content-item-right' : 'post-content-item-left' ?><!--">-->
                 <div class="post-thumb">
                     <a
                         href="<?php echo url_for1('@news_detail?slug=' . $new->slug) ?>" rel="bookmark">
