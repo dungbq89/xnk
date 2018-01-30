@@ -45,7 +45,8 @@
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-9 current_page_item menu-item-314 active">
                     <a  class="menu-header-1"
                         title="Home" href="<?php echo url_for('@homepage') ?>">
-                        <span class="glyphicon glyphicon-user" role="navigation" itemscope ></span>
+                        <span class="glyphicon glyphicon-home" role="navigation" itemscope ></span>
+<!--                        <span class="glyphicon glyphicon-user" role="navigation" itemscope ></span>-->
                         Trang chủ
                         <p class="menu-item-description menu-header-2">
                             Tôi nên biết</p>
@@ -57,7 +58,8 @@
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-260 dropdown">
                     <a title="About" href="javascript:void(0)"
                        data-toggle="dropdown" class="dropdown-toggle menu-header-1" aria-haspopup="true">
-                        <span class="fa fa-camera-retro fa-lg"></span>
+                        <span class="glyphicon glyphicon-book"></span>
+<!--                        <span class="fa fa-camera-retro fa-lg"></span>-->
                         Tự học<span class="fa fa-caret-down"></span>
 
                         <p class="menu-item-description menu-header-2"> Tôi cần đọc</p>
@@ -86,7 +88,8 @@
                     <a class="menu-header-1"
                         title="Shortcodes"
                         href="<?php echo url_for1('@introduction') ?>">
-                        <span class="fa fa-camera-retro fa-lg"></span>
+                        <span class="glyphicon glyphicon-bullhorn"></span>
+<!--                        <span class="fa fa-camera-retro fa-lg"></span>-->
                         Khóa huấn luyện
                         <p class="menu-item-description menu-header-2">Tôi được huấn luyện</p>
                     </a>
@@ -95,7 +98,8 @@
                     <a class="menu-header-1"
                         title="Shortcodes"
                         href="<?php echo url_for1('@listDocument') ?>">
-                        <span class="fa fa-camera-retro fa-lg"></span>
+                        <span class="glyphicon glyphicon-heart"></span>
+<!--                        <span class="fa fa-camera-retro fa-lg"></span>-->
                         Cảm nhận học viên
                         <p class="menu-item-description menu-header-2">Cảm nhận của tôi</p>
                     </a>
@@ -104,7 +108,8 @@
                     <a class="menu-header-1"
                         title="Shortcodes"
                         href="<?php echo url_for1('@videopage') ?>">
-                        <span class="fa fa-camera-retro fa-lg"></span>
+                        <span class="glyphicon glyphicon-facetime-video"></span>
+<!--                        <span class="fa fa-camera-retro fa-lg"></span>-->
                         Videos
                         <p class="menu-item-description menu-header-2">Tôi cần xem</p>
                     </a>
@@ -113,7 +118,8 @@
                     <a class="menu-header-1"
                         title="Shortcodes"
                         href="<?php echo url_for1('@category_new?slug=ky-nang') ?>">
-                        <span class="fa fa-camera-retro fa-lg"></span>
+                        <span class="glyphicon glyphicon-user"></span>
+<!--                        <span class="fa fa-camera-retro fa-lg"></span>-->
                         Kỹ năng
                         <p class="menu-item-description menu-header-2">Tôi cần luyện tập</p>
                     </a>
@@ -122,7 +128,8 @@
                     <a class="menu-header-1"
                         title="Shortcodes"
                         href="<?php echo url_for1('@listDocument') ?>">
-                        <span class="fa fa-camera-retro fa-lg"></span>
+                        <span class="glyphicon glyphicon-file"></span>
+<!--                        <span class="fa fa-camera-retro fa-lg"></span>-->
                         Kho tài liệu
                         <p class="menu-item-description menu-header-2">Tôi cần lưu trữ</p>
                     </a>
