@@ -6,6 +6,7 @@
 </header>
 
 <div class="container posts-archives">
+    <?php include_component('pageNews', 'bannerItem') ?>
     <div class="row">
         <div class="col-sm-8">
             <article id="post-211"

@@ -34,13 +34,16 @@
     p.menu-header-2:hover {
         color: #337ab7;
     }
+    .navbar-brand{
+        padding: 0px !important;
+    }
 </style>
 <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
                         class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            <a class="navbar-brand" href="<?php echo url_for('@homepage') ?>"><img height="90px"
+            <a class="navbar-brand" href="<?php echo url_for('@homepage') ?>"><img height="70px"
                                                                                    src="/images/xnk.png"
                                                                                    alt="Lớp học gia sư XNK"></a>
         </div>

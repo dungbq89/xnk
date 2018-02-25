@@ -3,11 +3,11 @@
     <div class="superslides" data-width="#start" data-height="#start" data-pause="5000" data-animation="slow"
          data-effect="fade" style="height:220px !important;">
         <div class="slides-container"><img
-                    <img
-                    src="tvdt/themes/magicreche/wordpress/wp-content/uploads/2014/03/banner2.jpg"
-                    alt="#2"> <img
-                    src="tvdt/themes/magicreche/wordpress/wp-content/uploads/2014/03/banner3.jpg"
-                    alt="#3"></div>
+            <img src="/images/BIA1.jpg" alt="#1">
+            <img src="/images/BIA2.jpg" alt="#2">
+            <img src="/images/BIA3.jpg" alt="#3">
+<!--            <img src="tvdt/themes/magicreche/wordpress/wp-content/uploads/2014/03/banner3.jpg" alt="#3">-->
+        </div>
         <nav class="slides-navigation">
             <a href="#" class="next"><i class="fa fa-chevron-right default"></i></a>
             <a href="#" class="prev"><i class="fa fa-chevron-left default"></i></a>

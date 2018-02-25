@@ -2,9 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-<!--    <title>Lớp học Gia sư Xuất nhập khẩu- CLB Xuất Nhập Khẩu Hà Nội</title>-->
-    <title><?php include_slot('title', 'Lớp học Gia sư Xuất nhập khẩu- CLB Xuất Nhập Khẩu Hà Nội') ?></title>
-
+    <title>CLB YÊU XUẤT NHẬP KHẨU HÀ NỘI - Đào tạo nghiệp vụ Xuất Nhập Khẩu-Logistics</title>
     <?php include_http_metas() ?>
     <?php include_metas() ?>
     <?php include_title() ?>
@@ -14,14 +12,6 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
     <meta http-equiv="Content-Language" content=""/>
-    <meta name="description" content="Nehob Serviced Apartment"/>
-    <meta name="keywords" content="serviced apartment, studio apartment, cheap serviced apartment"/>
-    <meta property="og:site_name" content="companyname">
-    <meta property="og:url" name="og:url" content="" data-app>
-    <meta property="og:type" name="og:type" content="website" data-app>
-    <meta property="og:description" name="og:description" content="Nehob Serviced Apartment" data-app>
-    <meta property="og:title" name="og:title" content="Nehob Serviced Apartment" data-app>
-    <meta property="og:image" name="og:image" content="" data-app>
     <link href="favicon.png" rel="shortcut icon"/>
     <meta http-equiv="REFRESH" content="5400"/>
 
@@ -101,6 +91,9 @@
         }
         h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
             font-family: 'Times New Roman';
+        }
+        #menu-main-menu a.menu-header-1{
+            padding: 10px !important;
         }
     </style>
 </head>
@@ -189,6 +182,16 @@
 
 
 </body>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114734785-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114734785-1');
+</script>
+
 <script type="text/javascript">
     $(document).ready(function() {
         $('#activity-xnk').owlCarousel({

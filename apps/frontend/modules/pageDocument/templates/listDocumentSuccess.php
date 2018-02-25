@@ -7,6 +7,7 @@ $listDocument = $pager->getResults();
 $n = count($listDocument);
 ?>
 <div class="container posts-archives">
+    <?php include_component('pageNews', 'bannerItem') ?>
     <div class="row">
         <!--        <div class="col-sm-8">-->
         <section id="latest-posts" class="post-18 page type-page status-publish hentry">

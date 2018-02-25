@@ -168,7 +168,7 @@ body {
 #catNewContent .entry-content-p p, #catNewContent .entry-title p, #pageNewNav p.post-title {
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 
 .entry-content .entry-meta {

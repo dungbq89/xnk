@@ -13,7 +13,7 @@ if (!empty($adVertises)) {
         <div class="item">
             <a href="<?php echo $adv['link'] ?>" data-img="<?php echo $path ?>">
                 <img
-                    src="<?php echo VtHelper::getThumbUrl($path, 321, 184, 'image_default'); ?>">
+                    src="<?php echo $path; ?>">
             </a>
         </div>
         <?php
