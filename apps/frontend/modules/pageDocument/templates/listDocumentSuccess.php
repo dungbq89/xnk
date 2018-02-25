@@ -9,6 +9,24 @@ $n = count($listDocument);
 <div class="container posts-archives">
     <?php include_component('pageNews', 'bannerItem') ?>
     <div class="row">
+        <div class="col-md-8"></div>
+        <div class="col-md-4">
+            <aside id="search-3" class="widget widget_search">
+                <div class="searchbox">
+                    <form role="search" method="get" id="searchform"
+                          action="<?php echo url_for1('@article_search') ?>">
+                        <input type="text" placeholder="To search type and hit enter&hellip;" class="form-control"
+                               value=""
+                               name="s">
+                        <input type="hidden" name="type" value="<?php echo $type ?>">
+
+                    </form>
+                </div>
+            </aside>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
         <!--        <div class="col-sm-8">-->
         <section id="latest-posts" class="post-18 page type-page status-publish hentry">
             <div class="container">
@@ -75,7 +93,8 @@ $n = count($listDocument);
                             <div class="paging-bottom-style1">
                                 <ul class="pagination">
                                     <?php if ($pager->getPage() >= 2): ?>
-                                        <li><a href="<?php echo url_for1('@listDocument'. ($cat != false ? ('?cat=' . $cat) : '')) ?>">
+                                        <li>
+                                            <a href="<?php echo url_for1('@listDocument' . ($cat != false ? ('?cat=' . $cat) : '')) ?>">
                                                 <i class="fa fa-angle-left"></i></a></li>
                                     <?php endif; ?>
                                     <?php foreach ($pager->getLinks() as $page): ?>
@@ -86,7 +105,7 @@ $n = count($listDocument);
                                     <?php endforeach; ?>
                                     <?php if ($pager->getPage() < $pager->getLastPage()): ?>
                                         <li>
-                                            <a href="<?php echo url_for1('@listDocument?page=' . $pager->getLastPage(). ($cat != false ? ('&cat=' . $cat) : '')) ?>"><i
+                                            <a href="<?php echo url_for1('@listDocument?page=' . $pager->getLastPage() . ($cat != false ? ('&cat=' . $cat) : '')) ?>"><i
                                                     class="fa fa-angle-right"></i></a></li>
                                     <?php endif; ?>
                                 </ul>

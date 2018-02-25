@@ -17,18 +17,18 @@ if ($pager && $pager->getNbResults()>0) {
             switch ($type) {
                 case'1': {  // video
                     include_partial('pageNews/searchVideo', array('pager' => $pager,
-                        'type' => $type, 'page' => $page
+                        'type' => $type, 'page' => $page, 'query'=>$query
                     ));
                 }
                     break;
                 case'2': {  // tai lieu
                     include_partial('pageNews/searchDoc', array('pager' => $pager,
-                        'type' => $type, 'page' => $page));
+                        'type' => $type, 'page' => $page, 'query'=>$query));
                 }
                     break;
                 default: {   // tin tuc
                     include_partial('pageNews/searchNews', array('pager' => $pager,
-                        'type' => $type, 'page' => $page));
+                        'type' => $type, 'page' => $page, 'query'=>$query));
                 }
             }
             ?>

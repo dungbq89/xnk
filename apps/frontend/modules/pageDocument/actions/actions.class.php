@@ -98,6 +98,7 @@ class pageDocumentActions extends sfActions
         $this->page = $page = $request->getParameter('page');
         $cat = trim($request->getParameter('cat', ''));
         $this->cat = false;
+        $this->type = '2';
         if ($cat) $this->cat = $cat;
         $pager = AdDocumentDownloadTable::getInstance()->getListDocumentDownload($limit, $page, $cat);
         $this->pager = $pager;
